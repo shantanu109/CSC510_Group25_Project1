@@ -1,5 +1,4 @@
 # 86 No More, A Kitchen Intelligence Solution
-<p align="center"><img width="1000" src="./docs/SE_image.png"></p>
 
 ![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/maven_build/badge.svg)
 ![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/npm-build/badge.svg)
