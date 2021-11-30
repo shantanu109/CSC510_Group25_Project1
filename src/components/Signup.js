@@ -15,6 +15,10 @@ class Signup extends Component {
       restname: ''
     };
   }
+  
+  componentWillUnmount() {
+    this.props.dispatch(clearAuthState())
+  }
 
 
 
