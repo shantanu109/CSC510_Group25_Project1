@@ -16,9 +16,7 @@ class Signup extends Component {
     };
   }
 
-  componentWillUnmount() {
-    this.props.dispatch(clearAuthState())
-  }
+
 
   handleInputChange = (field, value) => {
     this.setState({
