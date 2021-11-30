@@ -107,7 +107,7 @@ The project is not currently funded
 
 ## 🌠 Future
 
-See issues here: https://github.com/ashakhatri007/CSC510_Group25_Project1/issues
+See issues here: https://github.com/shantanu109/CSC510_Group25_Project1/issues
 
 # Contributors
   <table>
