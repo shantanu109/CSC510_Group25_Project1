@@ -11,7 +11,7 @@
 Quantity Calculator:  
 [![unit_tests](https://github.com/ashakhatri007/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml/badge.svg)](https://github.com/CSC510-Group-25/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml)
  
- ![86 no more](https://user-images.githubusercontent.com/53376580/144166574-a813825a-379f-4a0a-8de0-f6516afa0a9d.png)
+![1](https://user-images.githubusercontent.com/53376580/144174937-51c5d973-bf6e-4268-b048-0b4ea82f5c34.png)
 
 
 ## 💎 About:
