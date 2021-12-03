@@ -34,7 +34,26 @@ class History extends Component {
         height = {10}
         width = {50}
       />
-          
+      <Line
+        data={{
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          datasets: [
+            {
+              label: 'Number of sales per month',
+              data: [10653, 6032, 4605, 12130, 7466, 11524, 10568, 8918, 4151, 4026, 11432, 4218],
+              backgroundColor: [
+                'rgba(34,139,34, 0.2)'
+              ],
+              borderColor: [
+                'rgba(34,139,34, 1)'
+              ],
+              borderWidth: 1,
+            },
+          ],
+        }}
+        height = {10}
+        width = {50}
+      />
       </div>
             
         );
