@@ -40,7 +40,7 @@ class Navbar extends React.Component {
             <img
               
               alt="logo"
-              src="/images/WolfJobs Logo (1).png"
+              src="/images/WhatsApp Image 2021-12-04 at 4.31.50 PM.jpeg"
               style={{ height: "50px" }}
             />
           </Link>
