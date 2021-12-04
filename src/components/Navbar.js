@@ -10,6 +10,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import FlagIcon from "@material-ui/icons/Flag";
 import WorkIcon from "@material-ui/icons/Work";
 import ListAltIcon from "@material-ui/icons/ListAlt";
+import ListAltIcon from "@material-ui/icons/ListAlt";
 import SubscriptionsOutlinedIcon from "@material-ui/icons/SubscriptionsOutlined";
 import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
