@@ -8,6 +8,24 @@
 [![GitHub issues open](https://img.shields.io/github/issues/ashakhatri007/CSC510_Group25_Project1)](https://github.com/ashakhatri007/CSC510_Group25_Project1/issues)
 [![codecov](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1/branch/main/graph/badge.svg?token=JAUQCX59SH)](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1)
 
+
+[![DOI](https://zenodo.org/badge/420900040.svg)](https://zenodo.org/badge/latestdoi/420900040)
+
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=master)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+[![Issues](https://img.shields.io/github/issues/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Issues Closed](https://img.shields.io/github/issues-closed/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+![last commit](https://img.shields.io/github/last-commit/shantanu109/CSC510_Group25_Project1)
+![total lines](https://img.shields.io/tokei/lines/github/shantanu109/CSC510_Group25_Project1)
+[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![file_count](https://img.shields.io/github/directory-file-count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![language_count](https://img.shields.io/github/languages/count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Downloads](https://img.shields.io/github/downloads/shantanu109/CSC510_Group25_Project1/total)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Top Language](https://img.shields.io/github/languages/top/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Version](https://img.shields.io/github/package-json/v/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Release](https://img.shields.io/github/v/release/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+
 Quantity Calculator:  
 [![unit_tests](https://github.com/ashakhatri007/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml/badge.svg)](https://github.com/CSC510-Group-25/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml)
  
