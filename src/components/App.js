@@ -6,7 +6,7 @@ import jwtDecode from 'jwt-decode';
 
 import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
 
-import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History, UserApplication,Update } from './';
+import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History, UserApplication,Update,Notification } from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
@@ -112,6 +112,13 @@ class App extends React.Component {
         <PrivateRoute
               path="/update"
               component={Update}
+              isLoggedIn={auth.isLoggedIn}
+            
+              
+        />
+        <PrivateRoute
+              path="/notification"
+              component={Notification}
               isLoggedIn={auth.isLoggedIn}
             
               

@@ -10,12 +10,13 @@ import Goal from './Goal';
 import History from './History';
 import UserApplication from './UserApplication';
 import Update from './Update';
+import Notification from './Notification';
 
 
 
 
 
 
-export {Home, Page404,Navbar, Login,Signup,Settings,Goal,History,UserApplication,Update}
+export {Home, Page404,Navbar, Login,Signup,Settings,Goal,History,UserApplication,Update,Notification}
 
 
