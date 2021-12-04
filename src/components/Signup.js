@@ -116,6 +116,15 @@ class Signup extends Component {
             Signup
           </button>
         </div>
+      <div>
+        <GoogleLogin
+        clientId="890765322406-8kjk4ckk7rna07elrdugioj1elvdo3vo.apps.googleusercontent.com"
+        buttonText="SignUp"
+        onSuccess={this.responseGoogle}
+        onFailure={this.responseGoogle}
+        cookiePolicy={'single_host_origin'}
+        />
+      </div>
       </form>
   
       </div>
