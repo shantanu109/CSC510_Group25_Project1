@@ -55,6 +55,12 @@ class Login extends Component {
     
 //     this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
 //   }
+  
+  responseGoogle = (response)=>{
+  console.log(response);
+  console.log(response.profileObj);
+  this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
+}
 
   
 
