@@ -77,27 +77,10 @@ class Navbar extends React.Component {
             </div>
           )} */}
           {/* </div> */}
-          <div className="header__input">
-            {/* <img
-            className="search-icon"
-            src="https://image.flaticon.com/icons/svg/483/483356.svg"
-            alt="search-icon"
-          /> */}
-            <SearchIcon />
-            <input
-              placeholder="Search"
-              onChange={this.handleSearch}
-              style={{
-                border: "none",
-                backgroundColor: "transparent",
-                outlineWidth: "0",
-                width: "500px",
-              }}
-            />
-          </div>
+          
         </div>
         {auth.isLoggedIn && (
-          <div className="header__middle" style={{ marginLeft: "70px" }}>
+          <div className="header__middle" style={{ marginLeft: "20px" }}>
             <div className="header__option ">
               <Link to="/menu">
                 <RestaurantMenuIcon fontSize="large" />

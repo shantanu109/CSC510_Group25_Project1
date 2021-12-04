@@ -94,26 +94,7 @@ class History extends Component {
         width = {50}
       />
       </div>
-      <Line
-        data={{
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-          datasets: [
-            {
-              label: 'Quantity of items wasted',
-              data: [867, 785, 269, 786, 916, 837, 773, 406, 826, 961, 770, 759],
-              backgroundColor: [
-                'rgba(30,144,255, 0.2)'
-              ],
-              borderColor: [
-                'rgba(30,144,255, 1)'
-              ],
-              borderWidth: 1,
-            },
-          ],
-        }}
-        height = {10}
-        width = {50}
-      />
+      
       </div>
             
         );

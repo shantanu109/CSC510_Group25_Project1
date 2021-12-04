@@ -42,33 +42,33 @@ class Job extends Component {
             <div className="post-header">
               
               <div >
-                <h4 style={{display:'inline-block'}}>Job Name : </h4> 
+                <h4 style={{display:'inline-block'}}>Restaurant Name : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.restname}</span>
                   </div>
 
 
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Location : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Item : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.itemname}</span>
                   </div>
 
                   <div >
                     
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Description : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Cost Per Item : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.costperitem}</span>
                   </div>
 
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Pay : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Expiration Date : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.dateexpired}</span>
                   </div>
 
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Date Bought : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.datebought}</span>
                   </div>
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.quantity}</span>
                   </div> 
                 

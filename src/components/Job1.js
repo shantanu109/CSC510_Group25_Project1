@@ -46,26 +46,26 @@ class Job1 extends Component {
             <div className="post-header">
               
               <div >
-                <h4 style={{display:'inline-block'}}>Job Name : </h4> 
+                <h4 style={{display:'inline-block'}}>Restaurant Name : </h4> 
                 <span style={{marginLeft:'10px'}}>{menu.restname}</span>
                   </div>
 
 
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Location : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Dish : </h4> 
                 <span style={{marginLeft:'10px'}}>{menu.menuname}</span>
                   </div>
 
                   <div >
                     
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Description : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Price : </h4> 
                 <span style={{marginLeft:'10px'}}>{menu.costmenu}</span>
                   </div>
 
                   
                   
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 
                 <span style={{marginLeft:'10px'}}>{menu.quantity}</span>
                   </div> 
                 

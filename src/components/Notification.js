@@ -156,26 +156,7 @@ class Notification extends Component {
               </Card> }
             })
           }
-          {
-            job.map(job => {
-              return <Card  key={job._id}>
-                <CardContent>
-                  <Typography  color="primary" gutterBottom>
-                    Expiration Alert!
-                  </Typography>
-                  <Typography  color="textSecondary" gutterBottom>
-                    {job.dateexpired}
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    {job.itemname} is about to expire on {job.dateexpired}
-                  </Typography>
-                  <Typography  color="textSecondary">
-                    {job.quantity} unit{job.quantity > 1 ? "s are" : " is"} about to expire. Order replacement soon!
-                  </Typography>
-                </CardContent>
-              </Card>
-            })
-          }
+          
           {
             
             job.map(job => {
@@ -183,7 +164,7 @@ class Notification extends Component {
                 if (job.quantity<10){
               return <Card  key={job._id}>
                 <CardContent>
-                  <Typography  color="secondary" gutterBottom>
+                  <Typography  color="primary" gutterBottom>
                     Low Inventory Alert!
                   </Typography>
                   <Typography  color="textSecondary" gutterBottom>
