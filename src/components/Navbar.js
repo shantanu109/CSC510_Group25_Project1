@@ -94,7 +94,7 @@ class Navbar extends React.Component {
         {auth.isLoggedIn && (
           <div className="header__middle" style={{ marginLeft: "70px" }}>
             <div className="header__option ">
-              <Link to="/">
+              <Link to="/menu">
                 <HomeIcon fontSize="large" />
               </Link>
             </div>
