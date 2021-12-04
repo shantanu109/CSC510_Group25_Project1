@@ -102,7 +102,7 @@ class Navbar extends React.Component {
             
               <div className="header__option ">
                 <Link to="/goal">
-                  <WorkIcon fontSize="large" />
+                  <ListAltIcon fontSize="large" />
                 </Link>
               </div>
             
