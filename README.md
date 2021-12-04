@@ -81,39 +81,29 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 ### The user may also update its profile after completing the below form and clicking on "Update"
 <img width="1200" alt="signup" src="https://github.com/ashakhatri007/CSC510_Group25_Project1/blob/main/images/Update_profile.png">
 
-## 🚀 Steps for Running Backend:
-You can directly use Eclipse or Intellj to open up the project and run SpringSocialApplication.java file. You can also the start code from terminal. You need to update sql username and password in spring-social/src/main/resources/application.yml file.
-
-Go to spring-social folder and run 
-```bash
-mvn spring-boot:run
-```
-You also need to setup mysql. Make sure that mysql is installed in your local machine. After that run the following command inside spring-social folder
-
-```bash
-mysql -u root -p < create_table.sql
-```
-
-This command will create the database inventory_tracker and inside the database, users table will be formed. 
+# Installation Guide
+ 
+ - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
+ - Download and install [NodeJs](https://nodejs.org/en/download/)
+ - Download the Allow CORS: Access-Control-Allow-Origin extension for Google Chrome
+ 
+ - In the command prompt clone the frontend project using following commands:
+#### `git clone https://github.com/shantanu109/CSC510_Group25_Project1.git`
+#### `git clone https://github.com/shantanu109/86_Backend.git`
 
 
-Alternatively, if you're having trouble running this command, you can create the necessary tables through MySQL Workbench:  
-```
-In MySQL Workbench: Go to File > run SQL script > create_table.sql (inside spring-social folder)
-```
+- Then enter
+#### `rmdir /s /q node_modules && npm install`
+ to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
 
-## 🚀 Steps for Running Frontend:
-In a separate terminal window go to react-social folder and run
-```bash
-npm install
-```
-this will download all the dependencies in local node_module folder\
-then type the next command
-```bash
-npm start
-```
-this will start the application on localhost:3000
+ - Then enter below command for both the terminals to start the application:
+#### `npm start`
 
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ 
+# Source Code
+ - Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1
+ - Link to backend repository: https://github.com/shantanu109/86_Backend
 
 ### 🚀 Steps for running Quantity Calculator
 https://github.com/ashakhatri007/CSC510_Group25_Project1/tree/main/qty_calc
