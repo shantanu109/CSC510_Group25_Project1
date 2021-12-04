@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchUsers } from '../actions/search';
-// import {clearAuthState} from '../actions/auth';
+import {clearAuthState,editItem} from '../actions/auth';
 import {clearsearchstate} from '../actions/search';
 
 import 'react-datepicker/dist/react-datepicker.css';
@@ -37,7 +37,29 @@ class Goal extends Component {
         this.props.dispatch(searchUsers(searchText));
         
       };
+      handleSave1 = () => {
 
+        const {restname,restid,itemname,quantity,costperitem,datebought,dateexpired} = this.state;
+    
+        const {user} = this.props.auth;
+        const {job} = this.props;
+        console.log(itemname)
+    
+        // this.setState({
+        //   restname: user.restname,
+        //   restid:user._id
+        // })
+    
+        this.props.dispatch(editItem(itemname,quantity))
+    
+        this.setState({
+          itemname:''
+        })
+    
+       
+        
+      }
+    
    
 
     clearSearch = () => {
@@ -89,7 +111,7 @@ class Goal extends Component {
       const {user} = this.props.auth;
       const {job} = this.props;
         
-        
+      
         return (
             <div>
                 
@@ -161,11 +183,78 @@ class Goal extends Component {
         
 
         </div>
-        <div>
-        {job.map((job) => (
-          <Job job={job} />
-        ))}
+
+         
+        <div className="goal-form" style={{width:'600px',height:'300px',marginLeft:'100px'}} >
+           <span className="login-signup-header">Update Item</span>
+            {error && <div className="alert error-dailog">{error}</div>}
+            
+            {/* <form className="login-form"> */}
+
+            <div className="field">
+              
+          <input
+            placeholder="Item Name"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('itemname', e.target.value)}
+          />
         </div>
+
+        <div className="field">
+          <input
+            placeholder="Quantity"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('quantity', e.target.value)}
+          />
+        </div>
+{/* 
+        <div className="field">
+          <input
+            placeholder="Cost per item"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
+          />
+        </div>
+        <div className="field">
+          <input
+            placeholder="Date Bought"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('datebought', e.target.value)}
+          />
+        </div>
+
+        <div className="field">
+          <input
+            placeholder="Date Expired"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
+          />
+        </div> */}
+
+        {/* <div className="field">
+          <input
+            placeholder="Schedule"
+            type="text"
+            required
+            onChange={(e) => this.handleInputChange('schedule', e.target.value)}
+          />
+        </div> */}
+        
+        
+        <div className="field">
+        <button className="button save-btn" onClick={this.handleSave1} >Save</button>
+        </div>
+        
+        
+
+        </div>
+        
+        
         
                
         

@@ -65,6 +65,10 @@ class Job extends Component {
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.datebought}</span>
                   </div>
+                  <div >
+                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
+                <span style={{marginLeft:'10px'}}>{job.quantity}</span>
+                  </div>
                 
                 
               

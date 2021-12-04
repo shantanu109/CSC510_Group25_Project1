@@ -1,5 +1,5 @@
 
-import { UPDATE_JOB,ADD_JOB,CLOSE_JOB} from '../actions/actionTypes';
+import { UPDATE_JOB,ADD_JOB,CLOSE_JOB,EDIT_ITEM_SUCCESSFULL} from '../actions/actionTypes';
 
 export default function jobs(state = [], action) {
   // { posts : [] }
@@ -7,6 +7,9 @@ export default function jobs(state = [], action) {
   switch (action.type) {
     case UPDATE_JOB:
       return action.jobs;
+
+    case EDIT_ITEM_SUCCESSFULL:
+      return action.inventories
 
     case ADD_JOB:
       return [action.job, ...state];

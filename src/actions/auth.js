@@ -11,6 +11,7 @@ import {
   CLEAR_AUTH_STATE,
   EDIT_USER_SUCCESSFULL,
   EDIT_USER_FAILED,
+  EDIT_ITEM_SUCCESSFULL
 } from "./actionTypes";
 import { getFormBody } from "../helpers/utils";
 import { getAuthTokenFromLocalStorage } from "../helpers/utils";
@@ -187,3 +188,58 @@ export function editUser(
       });
   };
 }
+
+
+
+export function editItem(
+  itemname,
+  quantity,
+  
+  
+) {
+  return (dispatch) => {
+    const url = APIURLS.editItem();
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        //'Authorization': `Bearer ${getAuthTokenFromLocalStorage()}`
+      },
+      body: getFormBody({
+        itemname,
+        quantity
+        
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("EDIT PROFILE data", data);
+        if (data.success) {
+          dispatch(editItemSucessfull(data.data.inventories));
+
+          if (data.data.token) {
+            localStorage.setItem("token", data.data.token);
+          }
+          return;
+        }
+
+        // dispatch(editItemFailed(data.message));
+      });
+  };
+}
+
+
+export function editItemSucessfull(inventories) {
+  return {
+    type: EDIT_ITEM_SUCCESSFULL,
+    inventories,
+  };
+}
+
+// export function editUserFailed(error) {
+//   return {
+//     type: EDIT_USER_FAILED,
+//     error,
+//   };
+// }

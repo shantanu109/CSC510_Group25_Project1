@@ -7,6 +7,7 @@ export const APIURLS = {
     signup: () => `${API_ROOT}/users/signup`,
     fetchJobs: () => `${API_ROOT}/users/`,
     editProfile : () => `${API_ROOT}/users/edit`,
+    editItem : () => `${API_ROOT}/users/edititem`,
     
     createJob: () => `${API_ROOT}/users/createjob`,
     createApplication: () => `${API_ROOT}/users/createapplication`,

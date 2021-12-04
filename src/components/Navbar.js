@@ -107,7 +107,7 @@ class Navbar extends React.Component {
             
            
               <div className="header__option ">
-                <Link to="/history">
+                <Link to="/update">
                   <ListAltIcon fontSize="large" />
                 </Link>
               </div>
