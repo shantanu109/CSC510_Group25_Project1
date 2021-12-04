@@ -11,10 +11,10 @@
 [![Issues Closed](https://img.shields.io/github/issues-closed/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 ![last commit](https://img.shields.io/github/last-commit/shantanu109/CSC510_Group25_Project1)
 ![total lines](https://img.shields.io/tokei/lines/github/shantanu109/CSC510_Group25_Project1)
-[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/shantanu109/CSC510_Group25_Project1/main)[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![file_count](https://img.shields.io/github/directory-file-count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![language_count](https://img.shields.io/github/languages/count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
-[![Downloads](https://img.shields.io/github/downloads/shantanu109/CSC510_Group25_Project1/total)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+![GitHub all releases](https://img.shields.io/github/downloads/shantanu109/CSC510_Group25_Project1/total)
 [![Top Language](https://img.shields.io/github/languages/top/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Version](https://img.shields.io/github/package-json/v/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Release](https://img.shields.io/github/v/release/shantanu109/wolfjobs)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
@@ -105,7 +105,6 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 
 - Then enter
-#### `rmdir /s /q node_modules && npm install`
  to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
 
  - Then enter below command for both the terminals to start the application:
