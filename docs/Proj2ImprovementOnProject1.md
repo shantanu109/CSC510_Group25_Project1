@@ -1,34 +1,26 @@
 ## The below points have been improved from the previous phase of the project:
 
-### 1. We can now differentiate between Manager and Applicant signup. Earlier there was only a single signup option for both Manager and Applicant.
-![WhatsApp Image 2021-11-04 at 5 04 46 PM](https://user-images.githubusercontent.com/25662536/140419977-0d3ce4bb-d0bf-42c4-be7e-aa85b917b8fb.jpeg)
+### 1. A User can now update the quanitiy of the inventory items according to the use of items
+![WhatsApp Image 2021-12-04 at 5 54 28 PM](https://user-images.githubusercontent.com/89566418/144727042-d26d5419-eca5-482b-ab2b-2779cbdb303f.jpeg)
+![WhatsApp Image 2021-12-04 at 5 52 16 PM](https://user-images.githubusercontent.com/89566418/144726994-8fdc29fd-6b99-4712-89eb-c038638d71c6.jpeg)
+![WhatsApp Image 2021-12-04 at 5 52 16 PM (1)](https://user-images.githubusercontent.com/89566418/144726996-54c548f9-83fb-4b4a-8b16-35e768be210d.jpeg)
 
-### 2. There can be multiple managers who can now add multiple jobs.
-![WhatsApp Image 2021-11-04 at 5 09 22 PM](https://user-images.githubusercontent.com/25662536/140420455-86430aff-b55b-47fb-977f-10383a69fbb6.jpeg)
 
-### 3. A single job application can have multiple applicants apply for it.
-![WhatsApp Image 2021-11-04 at 5 12 19 PM](https://user-images.githubusercontent.com/25662536/140420843-beae012b-10b2-4d04-95d4-512fce166b2d.jpeg)
+### 2. We have also added logo to the application to give it a sharp look
+![WhatsApp Image 2021-12-04 at 5 55 42 PM](https://user-images.githubusercontent.com/89566418/144727062-b21fee60-8d7c-4ac1-b1a8-62b0976ddbbf.jpeg)
 
-### 4. There is a search field through which the user can search for any particular job based on job name.
-![WhatsApp Image 2021-11-04 at 5 13 07 PM](https://user-images.githubusercontent.com/25662536/140420957-1f8a3fb5-c868-437f-8589-7ce438c953fd.jpeg)
 
-### 5. A Manager can either Accept/Reject a job application by the applicants.
-![WhatsApp Image 2021-11-04 at 5 14 23 PM](https://user-images.githubusercontent.com/25662536/140421110-8a8cc868-6488-4055-9ede-c92b7b7f9d34.jpeg)
+### 3. In the Notifications Page added functionality to that give updates to the Restaurant staff so that they get timely alerts about the number of items left in the inventory. This functionality works in real time unlike the previous version of the project.
+![WhatsApp Image 2021-12-04 at 5 57 03 PM (1)](https://user-images.githubusercontent.com/89566418/144727121-e23fb1c2-b61c-4a1e-b972-bc4a91bfbd83.jpeg)
 
-### 6. This option is available only for the jobs the respective Manager posted.
+### 4. In the Notifications Page added functionality to that give updates to the Restaurant staff so that they get timely alerts about the expired Items. This functionality works in real time unlike the previous version of the project.
+![WhatsApp Image 2021-12-04 at 5 57 03 PM](https://user-images.githubusercontent.com/89566418/144727115-03d40753-3e2a-46e1-a06b-009915e8957e.jpeg)
 
-### 7. A user can edit his/her profile information including changing user password. He can also add his skills in the profile.
-![WhatsApp Image 2021-11-04 at 5 19 55 PM](https://user-images.githubusercontent.com/25662536/140421709-cbe73a33-9cc3-4927-98ce-2d73df66bbeb.jpeg)
 
-### 8. The Applicant can see his application status (Ongoing/Accepted/Rejected).
-![WhatsApp Image 2021-11-04 at 5 21 22 PM](https://user-images.githubusercontent.com/25662536/140421932-8246e9ac-2a5f-4454-8ef4-1e656083e240.jpeg)
+### 5. In the Analytics Page added graph plots that show the statistics for the items against the quantity.
+![WhatsApp Image 2021-12-04 at 6 00 54 PM](https://user-images.githubusercontent.com/89566418/144727181-ec145f3a-7781-47de-9104-d6400f327b26.jpeg)
 
-### 9. Using React, the web page doesn't get refreshed each time the user makes an API call. This results in better User Experience.
 
-### 10. Created a logo for the WolfJobs application.
-![WhatsApp Image 2021-11-04 at 5 22 44 PM](https://user-images.githubusercontent.com/25662536/140422055-8375904b-0750-4480-9579-daee67bf2e03.jpeg)
+### 6. In the Analytics Page added graph plots that show the statistics for the inventory item against its cost.
 
-### 11. A Manager can close the job posted, once the requirement is completed, therafter no applicant can apply for that job.
-![WhatsApp Image 2021-11-04 at 5 24 16 PM](https://user-images.githubusercontent.com/25662536/140422244-be22f175-4c1f-42e9-ba24-a529a50a0e53.jpeg)
-
-### 12. Resolved the issue of application status update on the Applicant's end when the Manager accepts/rejects the application.
+![WhatsApp Image 2021-12-04 at 6 00 54 PM (1)](https://user-images.githubusercontent.com/89566418/144727189-5f02594e-4cbb-4a0f-a1ff-f93de37b2f1f.jpeg)
