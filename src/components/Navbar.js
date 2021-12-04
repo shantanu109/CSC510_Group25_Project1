@@ -14,6 +14,7 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import SubscriptionsOutlinedIcon from "@material-ui/icons/SubscriptionsOutlined";
 import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
+import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 
 class Navbar extends React.Component {
   logOut = () => {
@@ -96,7 +97,7 @@ class Navbar extends React.Component {
           <div className="header__middle" style={{ marginLeft: "70px" }}>
             <div className="header__option ">
               <Link to="/menu">
-                <HomeIcon fontSize="large" />
+                <RestaurantMenuIcon fontSize="large" />
               </Link>
             </div>
             
