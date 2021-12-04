@@ -60,6 +60,8 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 ### Every Restaurant will create an account with our application through the sign-up page and login
 
+![WhatsApp Image 2021-12-04 at 6 03 47 PM (1)](https://user-images.githubusercontent.com/89566418/144727289-a3d5b2f2-222c-4f63-a36a-1049219df1b9.jpeg)
+
 ![WhatsApp Image 2021-12-04 at 6 03 47 PM](https://user-images.githubusercontent.com/89566418/144727272-d3fab7eb-a809-4ed2-b78c-2e74326d8e77.jpeg)
 
 
@@ -72,7 +74,6 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 ### After signing up, the user can also check the inventory that they currently have left
 
-![WhatsApp Image 2021-12-04 at 6 03 47 PM (1)](https://user-images.githubusercontent.com/89566418/144727289-a3d5b2f2-222c-4f63-a36a-1049219df1b9.jpeg)
 
 <img width="1200" alt="signup" src="https://user-images.githubusercontent.com/42051115/135180678-ae5158c6-124e-4d2e-9db8-c0e39c6c1449.png">
 
