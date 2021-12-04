@@ -15,7 +15,7 @@ import SubscriptionsOutlinedIcon from "@material-ui/icons/SubscriptionsOutlined"
 import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
-import InventoryIcon from '@material-ui/icons/InsertFileDrive';
+import InventoryIcon from '@material-ui/icons/InsertDriveFile';
 
 class Navbar extends React.Component {
   logOut = () => {
