@@ -55,8 +55,8 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 ## 🚅 Demo:
 ### Our Home Page
+![WhatsApp Image 2021-12-04 at 6 22 11 PM](https://user-images.githubusercontent.com/89566418/144727619-6768d86f-031b-4abe-981b-7baf3360616a.jpeg)
 
-<img width="1200" alt="home" src="https://user-images.githubusercontent.com/42051115/135185192-74660da7-1dd2-47ab-b6a8-9ec2bc9644ca.png">
 
 ### Every Restaurant will create an account with our application through the sign-up page and login
 
