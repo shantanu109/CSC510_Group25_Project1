@@ -1,12 +1,5 @@
 # 86 No More, A Kitchen Intelligence Solution
 
-![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/maven_build/badge.svg)
-![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/npm-build/badge.svg)
-[![DOI](https://zenodo.org/badge/416876176.svg)](https://zenodo.org/badge/latestdoi/416876176)
-[![Made with](https://img.shields.io/badge/Made%20with-Java-blue)](https://www.java.com/en/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://github.com/elric97/CalBot/blob/master/LICENSE)
-[![GitHub issues open](https://img.shields.io/github/issues/ashakhatri007/CSC510_Group25_Project1)](https://github.com/ashakhatri007/CSC510_Group25_Project1/issues)
-[![codecov](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1/branch/main/graph/badge.svg?token=JAUQCX59SH)](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1)
 
 
 [![DOI](https://zenodo.org/badge/433579918.svg)](https://zenodo.org/badge/latestdoi/433579918)
@@ -25,6 +18,10 @@
 [![Top Language](https://img.shields.io/github/languages/top/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Version](https://img.shields.io/github/package-json/v/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Release](https://img.shields.io/github/v/release/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+
+
+![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/npm-build/badge.svg)
+[![codecov](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1/branch/main/graph/badge.svg?token=JAUQCX59SH)](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1)
 
 Quantity Calculator:  
 [![unit_tests](https://github.com/ashakhatri007/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml/badge.svg)](https://github.com/CSC510-Group-25/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml)
