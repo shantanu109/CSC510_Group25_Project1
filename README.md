@@ -122,7 +122,7 @@ The project is not currently funded
 
 ## 🌠 Future
 
-See issues here: https://github.com/shantanu109/CSC510_Group25_Project1/issues
+See RoadMap here: https://github.com/shantanu109/CSC510_Group25_Project1/projects/1
 
 # Contributors
   <table>
