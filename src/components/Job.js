@@ -36,7 +36,9 @@ class Job extends Component {
         console.log('lalallaalaxxxx')
         const { isLoggedIn } = this.props.auth;
         return (
+          
             <div className="post" key={job._id} style={{width:'50vw',marginLeft:'50px'}}>
+              {user.restname == job.restname? 
             <div className="post-header">
               
               <div >
@@ -68,12 +70,12 @@ class Job extends Component {
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Schedule : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.quantity}</span>
-                  </div>
+                  </div> 
                 
                 
               
             
-            </div>
+            </div> : []}
           </div>
         );
     }

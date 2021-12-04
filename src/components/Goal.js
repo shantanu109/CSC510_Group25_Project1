@@ -114,7 +114,7 @@ class Goal extends Component {
       
         return (
             <div>
-                
+              
            <div className="goal-form" style={{width:'600px',height:'500px',marginLeft:'100px'}} >
            <span className="login-signup-header">Add Inventory</span>
             {error && <div className="alert error-dailog">{error}</div>}

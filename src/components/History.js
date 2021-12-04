@@ -4,23 +4,60 @@ import Application from './Application';
 import { connect } from 'react-redux';
 import { fetchJobs } from '../actions/job';
 import { Pie, Line, defaults } from 'react-chartjs-2';
+import jobs from '../reducers/job';
 
 
 class History extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      labels:[],
+      datasets:[]
+    };
+  }
+
+  componentDidMount() {
+
+    const {job} = this.props;
+    const {labels,datasets} = this.state
+    console.log('dsdsdrutututuut',job)
+    job.map((job) => (
+      
+      this.setState({
+        labels:labels.push(job.itemname)
+      })
+      
+    ))
+
+
+    
+  }
+
     
     render() {
-        
+      const {job} = this.props;
+      const {user} = this.props.auth;
+      console.log('JOVVVVVV',job)
+      const labels = [0,]
+      const data = ['',]
+      const datacost = ['',]
+      job.map((job) => (job.restname == user.restname && labels.push(job.itemname)))
+      job.map((job) => (job.restname == user.restname && data.push(job.quantity)))
+      job.map((job) => (job.restname == user.restname && datacost.push(job.costperitem)))
         return (
             <div>
         
         {/* <Widgets style={{marginTop:'1000px'}}/> */}
+        <div style={{marginTop:'40px'}}>
         <Line
         data={{
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: labels,
           datasets: [
             {
-              label: 'Number of orders per month',
-              data: [68, 94, 80, 97, 137, 65, 101, 66, 122, 137, 85, 127],
+              label: 'Quantity of Items Inside Inventory',
+              data: data,
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
               ],
@@ -34,13 +71,15 @@ class History extends Component {
         height = {10}
         width = {50}
       />
+      </div>
+      <div style={{marginTop:'60px'}}>
       <Line
         data={{
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          labels: labels,
           datasets: [
             {
-              label: 'Number of sales per month',
-              data: [10653, 6032, 4605, 12130, 7466, 11524, 10568, 8918, 4151, 4026, 11432, 4218],
+              label: 'Cost of Items Inside Inventory',
+              data: datacost,
               backgroundColor: [
                 'rgba(34,139,34, 0.2)'
               ],
@@ -54,6 +93,7 @@ class History extends Component {
         height = {10}
         width = {50}
       />
+      </div>
       <Line
         data={{
           labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -81,11 +121,11 @@ class History extends Component {
     }
 }
 
-function mapStateToProps({auth,job,application}) {
+function mapStateToProps(state) {
     return {
-      auth,
-      job,
-      application
+      auth: state.auth,
+      job:state.job,
+      
 
       
     };
