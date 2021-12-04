@@ -5,7 +5,7 @@ import { searchUsers } from '../actions/search';
 import {clearAuthState,editItem} from '../actions/auth';
 import {clearsearchstate} from '../actions/search';
 
-import 'react-datepicker/dist/react-datepicker.css';
+
 
 import Widgets from './Widgets.js';
 import {createJob} from '../actions/job';

@@ -20,6 +20,10 @@ export const ADD_JOB = "ADD_JOB";
 export const UPDATE_JOB = "UPDATE_JOB";
 export const CLOSE_JOB = "CLOSE_JOB";
 
+export const ADD_MENU = "ADD_MENU";
+export const UPDATE_MENU = "UPDATE_MENU";
+export const CLOSE_MENU = "CLOSE_MENU";
+
 export const ADD_APPLICATION = "ADD_APPLICATION";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 export const ACCEPT_APPLICATION = "ACCEPT_APPLICATION";

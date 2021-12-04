@@ -6,11 +6,11 @@ import jwtDecode from 'jwt-decode';
 
 import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
 
-import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History, UserApplication,Update,Notification } from './';
+import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History, UserApplication,Update,Notification,Menu } from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
-import { fetchJobs } from '../actions/job';
+import { fetchJobs ,fetchMenus} from '../actions/job';
 import { fetchApplications } from '../actions/job';
 
 
@@ -49,6 +49,7 @@ class App extends React.Component {
     //this.props.dispatch(fetchFriends(user._id));
     this.props.dispatch(fetchJobs());
     this.props.dispatch(fetchApplications());
+    this.props.dispatch(fetchMenus());
     
 
     const token = getAuthTokenFromLocalStorage();
@@ -119,6 +120,13 @@ class App extends React.Component {
         <PrivateRoute
               path="/notification"
               component={Notification}
+              isLoggedIn={auth.isLoggedIn}
+            
+              
+        />
+        <PrivateRoute
+              path="/menu"
+              component={Menu}
               isLoggedIn={auth.isLoggedIn}
             
               
