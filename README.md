@@ -60,34 +60,38 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 ### Every Restaurant will create an account with our application through the sign-up page and login
 
-![WhatsApp Image 2021-12-04 at 6 03 47 PM (1)](https://user-images.githubusercontent.com/89566418/144727289-a3d5b2f2-222c-4f63-a36a-1049219df1b9.jpeg)
+![WhatsApp Image 2021-12-04 at 6 03 47 PM (2)](https://user-images.githubusercontent.com/89566418/144727355-8f862ecf-9fbf-4449-a352-ff21c50effdc.jpeg)
 
 ![WhatsApp Image 2021-12-04 at 6 03 47 PM](https://user-images.githubusercontent.com/89566418/144727272-d3fab7eb-a809-4ed2-b78c-2e74326d8e77.jpeg)
 
 
 ### After signing up, the user can view the menu and see the currently available dishes
 
-<img width="1200" alt="signup" src="https://github.com/ashakhatri007/CSC510_Group25_Project1/blob/main/images/View%20menu.png">
+![WhatsApp Image 2021-12-04 at 6 11 06 PM](https://user-images.githubusercontent.com/89566418/144727408-b083ee4f-74ca-4285-999b-4e2d020d94c4.jpeg)
 
 ### If new dishes are available to the users, the employees can add them on the menu by clicking on the "Add new Menu Item" button
-<img width="1200" alt="signup" src="https://github.com/ashakhatri007/CSC510_Group25_Project1/blob/main/images/Add%20Menu%20item.png">
+![WhatsApp Image 2021-12-04 at 6 14 38 PM](https://user-images.githubusercontent.com/89566418/144727463-68cd58ed-52fb-48a4-9cf2-6bba9cbad8a8.jpeg)
+
 
 ### After signing up, the user can also check the inventory that they currently have left
+![WhatsApp Image 2021-12-04 at 6 16 27 PM](https://user-images.githubusercontent.com/89566418/144727496-9f42e80f-3d94-4064-ad4a-bda59c8d635d.jpeg)
 
-
-<img width="1200" alt="signup" src="https://user-images.githubusercontent.com/42051115/135180678-ae5158c6-124e-4d2e-9db8-c0e39c6c1449.png">
 
 ### The user can add new Inventory items by clicking on the "Add new Inventory Item" button
-<img width="1200" alt="signup" src="https://github.com/ashakhatri007/CSC510_Group25_Project1/blob/main/images/Add%20Inventory%20item.png">
+![WhatsApp Image 2021-12-04 at 6 03 47 PM](https://user-images.githubusercontent.com/89566418/144727495-ebfe7cb0-8e10-454c-b67d-ea104b23efa7.jpeg)
+
 
 ### When certain ingredients are running low or about to expire, they will be notified
-<img width="1200" alt="signup" src="https://user-images.githubusercontent.com/42051115/135180676-4941f523-553d-4586-be5b-a2a2b3992a5f.png">
+![WhatsApp Image 2021-12-04 at 6 18 34 PM (1)](https://user-images.githubusercontent.com/89566418/144727550-7a3f2def-ca4c-45c5-bec6-249334c55697.jpeg)
+
 
 ### The user may go to the analytics page to see analysis of how their restaurant is doing monthly
-<img width="1200" alt="signup" src="https://github.com/CSC510-Group-25/CSC510_Group25_Project1/blob/main/docs/graphs_SE.png">
+![WhatsApp Image 2021-12-04 at 6 18 34 PM](https://user-images.githubusercontent.com/89566418/144727535-bbbc1eec-e8d6-4ab6-a2a4-f5edcadf6cbe.jpeg)
 
-### The user may also update its profile after completing the below form and clicking on "Update"
-<img width="1200" alt="signup" src="https://github.com/ashakhatri007/CSC510_Group25_Project1/blob/main/images/Update_profile.png">
+
+### The user may also update password
+![WhatsApp Image 2021-12-04 at 6 20 17 PM](https://user-images.githubusercontent.com/89566418/144727574-b4f5f7d0-fe57-4ea8-96f9-c3bb48f382b6.jpeg)
+
 
 # Installation Guide
  
