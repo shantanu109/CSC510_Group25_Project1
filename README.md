@@ -117,9 +117,6 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
  - Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1
  - Link to backend repository: https://github.com/shantanu109/86_Backend
 
-### 🚀 Steps for running Quantity Calculator
-https://github.com/ashakhatri007/CSC510_Group25_Project1/tree/main/qty_calc
-
 ## Funding:
 The project is not currently funded
 
