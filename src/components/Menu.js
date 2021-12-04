@@ -107,7 +107,7 @@ class Menu extends Component {
             <div>
               
            <div className="goal-form" style={{width:'650px',height:'300px',marginLeft:'100px'}} >
-           <span className="login-signup-header">Add Menu</span>
+           <span className="login-signup-header">Add Menu Item</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
             
