@@ -5,7 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5759097.svg)](https://doi.org/10.5281/zenodo.5759097)
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-[![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=master)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
+[![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=main)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![Issues](https://img.shields.io/github/issues/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Issues Closed](https://img.shields.io/github/issues-closed/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
@@ -16,7 +16,7 @@
 [![language_count](https://img.shields.io/github/languages/count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Downloads](https://img.shields.io/github/downloads/shantanu109/CSC510_Group25_Project1/total)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Top Language](https://img.shields.io/github/languages/top/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
-[![Version](https://img.shields.io/github/package-json/v/shantanu109/wolfjobs)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Version](https://img.shields.io/github/package-json/v/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Release](https://img.shields.io/github/v/release/shantanu109/wolfjobs)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 
 
