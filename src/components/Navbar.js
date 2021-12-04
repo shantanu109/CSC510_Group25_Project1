@@ -16,6 +16,7 @@ import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import SupervisedUserCircleIcon from "@material-ui/icons/SupervisedUserCircle";
 import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 import InventoryIcon from '@material-ui/icons/InsertDriveFile';
+import TimelineIcon from '@material-ui/icons/Timeline';
 
 class Navbar extends React.Component {
   logOut = () => {
@@ -118,7 +119,7 @@ class Navbar extends React.Component {
             
               <div className="header__option ">
                 <Link to="/history">
-                  <InventoryIcon fontSize="large" />
+                  <TimelineIcon fontSize="large" />
                 </Link>
               </div>
 
