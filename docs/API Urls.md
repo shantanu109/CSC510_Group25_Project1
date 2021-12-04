@@ -52,45 +52,41 @@ res.json(200, {\
 
 ## Fetch Inventory
 Method: "GET"\
-/users/`,
-return res.json(200, {
-    message: "List of Inventories",
-
-    jobs: jobs,
+/users/`,\
+return res.json(200, {\
+    message: "List of Inventories",\
+    jobs: jobs,\
   });
 
 ## Edit Inventory Item
 Method: "POST"\
-/users/edititem
-return res.json(200, {
-        message: "Inventory Item is updated Successfully",
-
-        data: {
-         
-          inventories,
-        },
-        success: true,
-      });
+/users/edititem\
+return res.json(200, {\
+        message: "Inventory Item is updated Successfully",\
+        data: {\
+          inventories,\
+        },\
+        success: true,\
+      });\
     }
 
 ## Create Menu
 Method: "POST"\
-/users/createmenu
-return res.json(200, {
-      data: {
-        menu: menu,
-      },
-      message: "Menu Created!!",
-      success: true,
-    });
+/users/createmenu\
+return res.json(200, {\
+      data: {\
+        menu: menu,\
+      },\
+      message: "Menu Created!!",\
+      success: true,\
+    });\
   }
   
 ## Fetch Menu
 Method: "GET"\
-/users/fetchmenus
-return res.json(200, {
-    message: "List of Menus",
-
-    menu: menu,
+/users/fetchmenus\
+return res.json(200, {\
+    message: "List of Menus",\
+    menu: menu,\
   });
 }
