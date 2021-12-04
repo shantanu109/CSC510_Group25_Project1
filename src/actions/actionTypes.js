@@ -1,3 +1,4 @@
+
 //Login action types
 
 export const LOGIN_START = "LOGIN_START";
@@ -19,6 +20,10 @@ export const CLEAR_AUTH_STATE = "CLEAR_AUTH_STATE";
 export const ADD_JOB = "ADD_JOB";
 export const UPDATE_JOB = "UPDATE_JOB";
 export const CLOSE_JOB = "CLOSE_JOB";
+
+export const ADD_MENU = "ADD_MENU";
+export const UPDATE_MENU = "UPDATE_MENU";
+export const CLOSE_MENU = "CLOSE_MENU";
 
 export const ADD_APPLICATION = "ADD_APPLICATION";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
@@ -44,3 +49,5 @@ export const EDIT_HISTORY_FAILED = "EDIT_HISTORY_FAILED";
 export const FETCH_SEARCH_RESULTS_SUCCESS = "FETCH_SEARCH_RESULTS_SUCCESS";
 
 export const CLEAR_SEARCH_STATE = "CLEAR_SEARCH_STATE";
+
+
