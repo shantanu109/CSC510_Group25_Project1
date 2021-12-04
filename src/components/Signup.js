@@ -45,6 +45,13 @@ class Signup extends Component {
     
 //     this.props.dispatch(signup(response.profileObj.email,response.profileObj.googleId,response.profileObj.googleId,response.profileObj.givenName))
 //   }
+  
+  responseGoogle = (response)=>{
+  console.log(response);
+  console.log(response.profileObj);
+ 
+  this.props.dispatch(signup(response.profileObj.email,response.profileObj.googleId,response.profileObj.googleId,response.profileObj.givenName))
+}
 
 
   render() {
