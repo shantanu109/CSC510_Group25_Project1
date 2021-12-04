@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import Application from './Application';
+
 import { connect } from 'react-redux';
-import { fetchJobs } from '../actions/job';
+
 import { Pie, Line, defaults } from 'react-chartjs-2';
-import jobs from '../reducers/job';
+
 
 
 class History extends Component {
@@ -22,14 +22,7 @@ class History extends Component {
 
     const {job} = this.props;
     const {labels,datasets} = this.state
-    console.log('dsdsdrutututuut',job)
-    job.map((job) => (
-      
-      this.setState({
-        labels:labels.push(job.itemname)
-      })
-      
-    ))
+    
 
 
     
@@ -49,7 +42,6 @@ class History extends Component {
         return (
             <div>
         
-        {/* <Widgets style={{marginTop:'1000px'}}/> */}
         <div style={{marginTop:'40px'}}>
         <Line
         data={{

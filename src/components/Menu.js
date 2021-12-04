@@ -44,19 +44,10 @@ class Menu extends Component {
         const {job} = this.props;
         console.log(itemname)
     
-        // this.setState({
-        //   restname: user.restname,
-        //   restid:user._id
-        // })
-    
+       
         this.props.dispatch(editItem(itemname,quantity))
     
-        this.setState({
-            menuname:'',
-            quantity:'',
-            costmenu:''
-        })
-    
+        
        
         
       }
@@ -93,11 +84,8 @@ class Menu extends Component {
 
     this.props.dispatch(createMenu(user.restname,user._id,menuname,quantity,costmenu))
 
-   
+    
 
-    this.setState({
-        itemname:'',
-      })
     
   }
 
@@ -111,8 +99,7 @@ class Menu extends Component {
     render() {
        
       const {error} = this.props.auth;
-      const {user} = this.props.auth;
-      const {job} = this.props;
+      
       const {menu} = this.props;
         
       
@@ -123,7 +110,7 @@ class Menu extends Component {
            <span className="login-signup-header">Add Menu</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
-            {/* <form className="login-form"> */}
+            
 
             <div className="field">
               

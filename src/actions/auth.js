@@ -237,9 +237,3 @@ export function editItemSucessfull(inventories) {
   };
 }
 
-// export function editUserFailed(error) {
-//   return {
-//     type: EDIT_USER_FAILED,
-//     error,
-//   };
-// }

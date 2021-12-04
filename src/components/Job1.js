@@ -2,36 +2,14 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Menu } from '.';
-import { createApplication , closeJob} from '../actions/job';
+
+
 
 class Job1 extends Component {
     
-    handleApply = () => {
+    
 
-        
-    
-        const {user} = this.props.auth;
-        const {job} = this.props;
-    
-        this.props.dispatch(createApplication(user.name,user.address,user.phonenumber,user._id,user.hours,user.dob,user.gender,user.skills,user.email,job.managerid,job.name,job._id))
-       
-      }
-
-      handleApply1 = () => {
-
-        
-    
-        
-            const {user} = this.props.auth;
-            const {job} = this.props;
-           
-            this.props.dispatch(closeJob(user._id,job._id))
-    
-           
-          
-       
-      }
+      
     
     render() {
         const { job } = this.props;
@@ -82,7 +60,7 @@ function mapStateToProps({ auth, job,application }) {
     return {
       auth,
       application,
-    //   job
+    
       
     };
   }

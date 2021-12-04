@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchUsers } from '../actions/search';
-import {clearAuthState,editItem} from '../actions/auth';
+import {editItem} from '../actions/auth';
 import {clearsearchstate} from '../actions/search';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
-import Widgets from './Widgets.js';
 import {createJob} from '../actions/job';
 import { fetchJobs } from '../actions/job';
-import Job from './Job';
+
 
 
 class Goal extends Component {
@@ -30,25 +29,12 @@ class Goal extends Component {
       }
     
 
-    handleSearch = (e) => {
-        const searchText = e.target.value;
-        console.log(searchText)
-         
-        this.props.dispatch(searchUsers(searchText));
-        
-      };
       handleSave1 = () => {
 
-        const {restname,restid,itemname,quantity,costperitem,datebought,dateexpired} = this.state;
+        const {itemname,quantity} = this.state;
     
-        const {user} = this.props.auth;
-        const {job} = this.props;
         console.log(itemname)
     
-        // this.setState({
-        //   restname: user.restname,
-        //   restid:user._id
-        // })
     
         this.props.dispatch(editItem(itemname,quantity))
     
@@ -119,7 +105,6 @@ class Goal extends Component {
            <span className="login-signup-header">Add Inventory</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
-            {/* <form className="login-form"> */}
 
             <div className="field">
               
@@ -159,21 +144,13 @@ class Goal extends Component {
 
         <div className="field">
           <input
-            placeholder="Date Expired"
+            placeholder="Expiration Date"
             type="text"
             required
             onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
           />
         </div>
 
-        {/* <div className="field">
-          <input
-            placeholder="Schedule"
-            type="text"
-            required
-            onChange={(e) => this.handleInputChange('schedule', e.target.value)}
-          />
-        </div> */}
         
         
         <div className="field">
@@ -189,7 +166,7 @@ class Goal extends Component {
            <span className="login-signup-header">Update Item</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
-            {/* <form className="login-form"> */}
+            
 
             <div className="field">
               
@@ -209,42 +186,7 @@ class Goal extends Component {
             onChange={(e) => this.handleInputChange('quantity', e.target.value)}
           />
         </div>
-{/* 
-        <div className="field">
-          <input
-            placeholder="Cost per item"
-            type="text"
-            required
-            onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
-          />
-        </div>
-        <div className="field">
-          <input
-            placeholder="Date Bought"
-            type="text"
-            required
-            onChange={(e) => this.handleInputChange('datebought', e.target.value)}
-          />
-        </div>
-
-        <div className="field">
-          <input
-            placeholder="Date Expired"
-            type="text"
-            required
-            onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
-          />
-        </div> */}
-
-        {/* <div className="field">
-          <input
-            placeholder="Schedule"
-            type="text"
-            required
-            onChange={(e) => this.handleInputChange('schedule', e.target.value)}
-          />
-        </div> */}
-        
+   
         
         <div className="field">
         <button className="button save-btn" onClick={this.handleSave1} >Save</button>

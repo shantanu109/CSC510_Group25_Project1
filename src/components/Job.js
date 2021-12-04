@@ -4,37 +4,15 @@ import { createApplication , closeJob} from '../actions/job';
 
 class Job extends Component {
     
-    handleApply = () => {
+    
 
-        
-    
-        const {user} = this.props.auth;
-        const {job} = this.props;
-    
-        this.props.dispatch(createApplication(user.name,user.address,user.phonenumber,user._id,user.hours,user.dob,user.gender,user.skills,user.email,job.managerid,job.name,job._id))
-       
-      }
-
-      handleApply1 = () => {
-
-        
-    
-        
-            const {user} = this.props.auth;
-            const {job} = this.props;
-           
-            this.props.dispatch(closeJob(user._id,job._id))
-    
-           
-          
-       
-      }
+      
     
     render() {
         const { job } = this.props;
         const {user} = this.props.auth;
         console.log('lalallaalaxxxx')
-        const { isLoggedIn } = this.props.auth;
+        
         return (
           
             <div className="post" key={job._id} style={{width:'50vw',marginLeft:'50px'}}>
@@ -85,7 +63,7 @@ function mapStateToProps({ auth, job,application }) {
     return {
       auth,
       application,
-    //   job
+    
       
     };
   }

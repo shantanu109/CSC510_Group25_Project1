@@ -49,12 +49,6 @@ class Login extends Component {
     }
   };
 
-//   responseGoogle = (response)=>{
-//     console.log(response);
-//     console.log(response.profileObj);
-    
-//     this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
-//   }
   
   responseGoogle = (response)=>{
   console.log(response);
@@ -103,29 +97,20 @@ class Login extends Component {
           <button onClick={this.handleFormSubmit} disabled={inProgress}>Logging in...</button>:
           <button onClick={this.handleFormSubmit} disabled={inProgress}>Log In</button>
           }
-          
-        </div>
-      <div>
+          <div >
       <GoogleLogin
         clientId="890765322406-8kjk4ckk7rna07elrdugioj1elvdo3vo.apps.googleusercontent.com"
-        buttonText="Login "
+        buttonText="Login with Google "
         onSuccess={this.responseGoogle}
         onFailure={this.responseGoogle}
         cookiePolicy={'single_host_origin'}
         
       />
+        </div>
+      
       </div>
       </form>
-      {/* <div style={{marginLeft:'46vw'}}>
-      <GoogleLogin
-        clientId="856518495899-eebbk7k67frq3389d2jeevhejt5haa7h.apps.googleusercontent.com"
-        buttonText="Login"
-        onSuccess={this.responseGoogle}
-        onFailure={this.responseGoogle}
-        cookiePolicy={'single_host_origin'}
-        
-      />
-      </div> */}
+      
       </div>
     );
   }

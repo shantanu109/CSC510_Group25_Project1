@@ -7,10 +7,8 @@ import {clearsearchstate} from '../actions/search';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
-import Widgets from './Widgets.js';
-import {createJob} from '../actions/job';
 import { fetchJobs } from '../actions/job';
-import Job from './Job';
+
 import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -89,11 +87,7 @@ class Notification extends Component {
     const {job} = this.props;
     console.log(itemname)
 
-    // this.setState({
-    //   restname: user.restname,
-    //   restid:user._id
-    // })
-
+    
     this.props.dispatch(editItem(itemname,quantity))
 
     this.setState({
@@ -122,6 +116,7 @@ class Notification extends Component {
       
         return (
             <div>
+                
              <div style={{
     display: 'flex',
     justifyContent: 'center',
@@ -133,9 +128,11 @@ class Notification extends Component {
         <Box flexDirection="row-reverse">
           {
             job.map(job => {
+                
             var parts2 = job.dateexpired.split('/')
-
-            if (Number(parts2[0]) - Number(parts[2]) < 10 && Number(parts2[1]) - Number(parts[1] < -2)){
+            console.log('parrrtptptps',parts2)
+            console.log('parrrt1',parts)
+            if (Number(parts2[0]) - Number(parts[2]) < 1 && Number(parts2[1]) - Number(parts[1] < -2) && Number(parts[0]) > Number(parts2[2])){
 
               return <Card  key={job._id}>
                 <CardContent>

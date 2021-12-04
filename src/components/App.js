@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import { fetchJobs ,fetchMenus} from '../actions/job';
-import { fetchApplications } from '../actions/job';
+
 
 
 const PrivateRoute = (privateRouteProps) => {
@@ -49,7 +49,7 @@ class App extends React.Component {
     //const {user} = this.props.auth
     //this.props.dispatch(fetchFriends(user._id));
     this.props.dispatch(fetchJobs());
-    this.props.dispatch(fetchApplications());
+    
     this.props.dispatch(fetchMenus());
     
 
@@ -132,13 +132,7 @@ class App extends React.Component {
             
               
         />
-        <PrivateRoute
-              path="/applicationinfo"
-              component={UserApplication}
-              isLoggedIn={auth.isLoggedIn}
-            
-              
-        />
+        
         
         
         

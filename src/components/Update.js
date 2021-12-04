@@ -7,8 +7,6 @@ import {clearsearchstate} from '../actions/search';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
-import Widgets from './Widgets.js';
-import {createJob} from '../actions/job';
 import { fetchJobs } from '../actions/job';
 import Job from './Job';
 
