@@ -50,38 +50,47 @@ res.json(200, {\
       success: true,\
     });
 
-## Create History
+## Fetch Inventory
+Method: "GET"\
+/users/`,
+return res.json(200, {
+    message: "List of Inventories",
+
+    jobs: jobs,
+  });
+
+## Edit Inventory Item
 Method: "POST"\
-/users/createhistory\
-Response:\
-res.json(200, {\
-            message: "History Created Successfully",\
-            data: {\              
-              history:history,\
-            },\
-            success: true,\
-          });
+/users/edititem
+return res.json(200, {
+        message: "Inventory Item is updated Successfully",
 
-## Get History
-Method: "GET"\
-/users/gethistory?id=${userId}&date=${date}\
-Response:\
-res.json(200, {\
-      message: "The User Profile",\
-      data: {\
-        history: history,\
-      },\
-      success: true,\
-    })
+        data: {
+         
+          inventories,
+        },
+        success: true,
+      });
+    }
 
-## Get Food and its Calorie content
+## Create Menu
+Method: "POST"\
+/users/createmenu
+return res.json(200, {
+      data: {
+        menu: menu,
+      },
+      message: "Menu Created!!",
+      success: true,
+    });
+  }
+  
+## Fetch Menu
 Method: "GET"\
-/users/search/${searchText}\
-Response:\
-res.json(200, {\
-      message: "The list of Searched Food",\
-      data: {\
-        users: users,\
-      },\
-      success: true,\
-    })
+/users/fetchmenus
+return res.json(200, {
+    message: "List of Menus",
+
+    menu: menu,
+  });
+}
