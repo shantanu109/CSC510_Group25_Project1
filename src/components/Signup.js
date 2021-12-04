@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { startSingup, signup ,clearAuthState} from '../actions/auth';
 import { Redirect } from 'react-router-dom';
+import GoogleLogin from 'react-google-login';
 
 
 class Signup extends Component {
@@ -15,10 +16,12 @@ class Signup extends Component {
       restname: ''
     };
   }
-
+  
   componentWillUnmount() {
     this.props.dispatch(clearAuthState())
   }
+
+
 
   handleInputChange = (field, value) => {
     this.setState({
@@ -42,6 +45,13 @@ class Signup extends Component {
     
 //     this.props.dispatch(signup(response.profileObj.email,response.profileObj.googleId,response.profileObj.googleId,response.profileObj.givenName))
 //   }
+  
+  responseGoogle = (response)=>{
+  console.log(response);
+  console.log(response.profileObj);
+ 
+  this.props.dispatch(signup(response.profileObj.email,response.profileObj.googleId,response.profileObj.googleId,response.profileObj.givenName))
+}
 
 
   render() {
@@ -106,6 +116,15 @@ class Signup extends Component {
             Signup
           </button>
         </div>
+      <div>
+        <GoogleLogin
+        clientId="890765322406-8kjk4ckk7rna07elrdugioj1elvdo3vo.apps.googleusercontent.com"
+        buttonText="SignUp"
+        onSuccess={this.responseGoogle}
+        onFailure={this.responseGoogle}
+        cookiePolicy={'single_host_origin'}
+        />
+      </div>
       </form>
   
       </div>

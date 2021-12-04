@@ -8,16 +8,19 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "chart.js": "^2.9.4",
     "crypto-js": "^4.1.1",
     "jwt-decode": "^3.1.2",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
+    "react": "^17.0.1",
     "react-calendar": "^3.4.0",
+    "react-chartjs-2": "^2.10.0",
     "react-datepicker": "^4.2.1",
-    "react-dom": "^17.0.2",
+    "react-dom": "^17.0.1",
+    "react-google-login": "^5.2.2",
     "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "3.4.4",
     "react-slick": "^0.28.1",
     "react-thunk": "^1.0.0",
     "redux": "^4.1.1",
@@ -39,7 +42,7 @@
       "react-app/jest"
     ]
   },
-  "prettier":{
+  "prettier": {
     "trailingComma": "es5",
     "tabWidth": 4,
     "semi": false,

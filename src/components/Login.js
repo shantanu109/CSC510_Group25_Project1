@@ -3,6 +3,7 @@ import { clearAuthState, login ,loginGoogle} from '../actions/auth';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 // import GoogleLogin from 'react-google-login';
+import GoogleLogin from 'react-google-login';
 
 
 
@@ -54,6 +55,12 @@ class Login extends Component {
     
 //     this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
 //   }
+  
+  responseGoogle = (response)=>{
+  console.log(response);
+  console.log(response.profileObj);
+  this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
+}
 
   
 
@@ -98,6 +105,16 @@ class Login extends Component {
           }
           
         </div>
+      <div>
+      <GoogleLogin
+        clientId="890765322406-8kjk4ckk7rna07elrdugioj1elvdo3vo.apps.googleusercontent.com"
+        buttonText="Login "
+        onSuccess={this.responseGoogle}
+        onFailure={this.responseGoogle}
+        cookiePolicy={'single_host_origin'}
+        
+      />
+      </div>
       </form>
       {/* <div style={{marginLeft:'46vw'}}>
       <GoogleLogin

@@ -1,6 +1,6 @@
 # Contributing to WolfJobs!!
 
-The following is a set of guidelines for contributing to WolfJobs. We are open to suggestions to enhance our project.
+The following is a set of guidelines for contributing to 86 No More. We are open to suggestions to enhance our project.
 
 ## Table of Contents:
 
@@ -14,7 +14,7 @@ The following is a set of guidelines for contributing to WolfJobs. We are open t
 
 ## How can I contribute?
 <h3 id="section1"> Reporting bugs</h3>
-<p>This section guides you through submitting a bug report for SE Group 28. </p>
+<p>This section guides you through submitting a bug report for 86 No More. </p>
 
 When you are creating a bug report, please include as many details as possible to understand the issue.
   
@@ -29,7 +29,7 @@ When you are creating a bug report, please include as many details as possible t
   </ul>
   
 <h3 id="section2"> Suggesting Enhancements</h3>
-This section guides you through submitting a suggestion for WolfJobs, including completely new features and minor improvements to existing functionality. 
+This section guides you through submitting a suggestion for 86 No More, including completely new features and minor improvements to existing functionality. 
 
 Enhancement suggestions are tracked as GitHub issues. 
 After you've determined which repository your enhancement suggestion is related to, create an issue on that repository and provide the information like title, step-by-step description, specific examples.\
@@ -43,7 +43,7 @@ Giving more detailed information will help us understand the suggestion better.
 
 The process described here has several goals: 
 
-- Maintain WolfJobs quality 
+- Maintain 86 No More quality 
 - Fix problems that are important to users 
-- Engage the community in working toward the best possible WolfJobs 
-- Enable a sustainable system for Atom's maintainers to review contributions
+- Engage the community in working toward the best possible 86 No More 
+- Enable a sustainable system for 86 No More's maintainers to review contributions
