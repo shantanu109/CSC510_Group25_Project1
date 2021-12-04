@@ -9,7 +9,7 @@
 [![codecov](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1/branch/main/graph/badge.svg?token=JAUQCX59SH)](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1)
 
 
-[![DOI](https://zenodo.org/badge/420900040.svg)](https://zenodo.org/badge/latestdoi/420900040)
+[![DOI](https://zenodo.org/badge/433579918.svg)](https://zenodo.org/badge/latestdoi/433579918)
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=master)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
