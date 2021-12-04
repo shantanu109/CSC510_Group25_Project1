@@ -13,12 +13,7 @@ export const APIURLS = {
     
     createJob: () => `${API_ROOT}/users/createjob`,
     createMenu: () => `${API_ROOT}/users/createmenu`,
-    createApplication: () => `${API_ROOT}/users/createapplication`,
-    acceptApplication: () => `${API_ROOT}/users/acceptapplication`,
-    rejectApplication: () => `${API_ROOT}/users/rejectapplication`,
-    userSearch: (searchText) => `${API_ROOT}/users/search/${searchText}`,
-    fetchApplication: () => `${API_ROOT}/users/fetchapplications`,
-    closeJob: () => `${API_ROOT}/users/closejob`,
+    
     fetchMenus: () => `${API_ROOT}/users/fetchmenus`,
 
    
