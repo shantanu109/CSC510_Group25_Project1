@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { startSingup, signup ,clearAuthState} from '../actions/auth';
 import { Redirect } from 'react-router-dom';
+import GoogleLogin from 'react-google-login';
 
 
 class Signup extends Component {
