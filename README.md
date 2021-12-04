@@ -2,7 +2,7 @@
 
 
 
-[![DOI](https://zenodo.org/badge/433579918.svg)](https://zenodo.org/badge/latestdoi/433579918)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5759097.svg)](https://doi.org/10.5281/zenodo.5759097)
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=master)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
