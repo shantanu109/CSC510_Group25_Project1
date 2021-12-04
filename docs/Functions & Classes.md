@@ -12,10 +12,10 @@ data(token, user)
 success:True/False
 
 ### II. Function SignUp
-#### Parameters: Email, password, confirm Password, name
+#### Parameters: Email, password, confirm Password, name, Restaurant_Name
 #### Method: "Post"
 #### Description:
-Create a user(Manager or Applicant). The server side checks the conditions.
+Create a user(Restaurant). The server side checks the conditions.
 a.Password & Confirm Password matches.
 b.If a user already exists with the same email. If user already exists, it returns the user.
 c.Creates a new user if there is not a user with the same email in DB.
@@ -24,93 +24,70 @@ The function updates the state of the user on client side on success.
 
 ### III. Function Edit User Profile
 #### Parmaters: 
-name, password, role, address, phonenumber, hours, gender, dob, skills
+password
 #### Method: "Post"
 #### Description: 
-Finds the user inside the database & updates its name, password, role, address, phonenumber, hours, gender, dob, skills
+Finds the user inside the database & updates its name, password
 #### Output: 
 #"User is updated Successfully"
 data{user}
 success:True
 
-### IV. Function createJob
+### IV. Function createInventory
 #### Parameters: 
-jobname, id, skills, location, description, pay, schedule
+Restaurant Name, Item name, Rest Id, CostPerItem, Quantity, DateBought, DateExpired
 #### Method: "Post"
 #### Description: 
-Creates new Job
+Creates new Inventory Item
 #### Output: 
 data: {
         job: job,
       },
-      message: "Job Created!!",
+      message: "Item Created!!",
       success: true,
 
-### V. Function closeJob
+### V. Function Update Inventory Item
 #### Parameters: 
-JobId
+ItemName, Quantity
 #### Method:
 'POST'
 #### Description:
-Function makes an API call to change the status of the job to open to close
+Function makes an API call to change the quantity of the inventory item
 #### Output:  
-message: "Job status is updated Successfully",
+message: "Inventory Item is updated Successfully",
 
       data: {
         job,
       },
       success: true,
 
-### VI. Function Create Application
+### VI. Function Fetch Inventories
 #### Parameters- 
-ID, Name, Address, PhoneNumber, Hours, DOB, gender, Skills, JobName, JobId, MangerId
-#### Method: "Post"
+
+#### Method: "GET"
 #### Description: 
-Function makes a new application whenever an applicant applies.
+Function return all the inventory items
 #### Output:
 #### Message: 
 data: {
-        application: application,
+        Inventory: Inventory,
       },
-      message: "Application Created!!",
+      message: "List of Inventory!!",
       success: true,
     }
 
-### VII. Function Accept Application
+### VII. Function Fetch Menus
 #### Parameters- 
-ApplicationId
-#### Method: "Post"
-#### Description:
-Changes the status of the application from pending to Accepted.
-#### Output:
-message: "Application is updated Successfully",
-      data: {
-        application,
-      },
-      success: true,
-      
-### VIII. Function Reject Application
-#### Parameters- 
-ApplicationId
-#### Method: "Post"
-#### Description:
-Changes the status of the application from pending to Rejected.
-#### Output:
-message: "Application is updated Successfully",
-      data: {
-        application,
-      },
-      success: true
-      
-### IX. Function search Job
-#### Parmaters: 
-search String
-#### Method: "Get"
+
+#### Method: "GET"
 #### Description: 
-Finds the jobs based on the search String
-#### Output: 
-message: "The list of Searched Users",
-      data: {
-        users: users,
+Function return all the Menu items
+#### Output:
+#### Message: 
+data: {
+        Menu: Menu,
       },
-      success: true
+      message: "List of Menu!!",
+      success: true,
+    }
+  
