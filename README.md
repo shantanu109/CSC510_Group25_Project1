@@ -16,8 +16,8 @@
 [![language_count](https://img.shields.io/github/languages/count/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Downloads](https://img.shields.io/github/downloads/shantanu109/CSC510_Group25_Project1/total)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 [![Top Language](https://img.shields.io/github/languages/top/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
-[![Version](https://img.shields.io/github/package-json/v/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
-[![Release](https://img.shields.io/github/v/release/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Version](https://img.shields.io/github/package-json/v/shantanu109/wolfjobs)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
+[![Release](https://img.shields.io/github/v/release/shantanu109/wolfjobs)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
 
 
 ![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/npm-build/badge.svg)
