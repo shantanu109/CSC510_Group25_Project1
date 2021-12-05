@@ -9,7 +9,5 @@ cache:
     - .jest
 before_script:
   - npm install -g npm@latest
-before_install:
-  - npm run env prod
 script:
   - npm test -- --coverage
