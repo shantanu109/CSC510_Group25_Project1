@@ -12,6 +12,4 @@ before_script:
 before_install:
   - npm run env prod
 script:
-  - yarn test
-after_success:
-  - coverage
+  - npm test -- --coverage
