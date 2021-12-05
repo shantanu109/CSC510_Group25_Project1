@@ -112,7 +112,7 @@ npm install --save-dev @wojtekmaj/enzyme-adapter-react-17\
 npm run test
 
 ## To test Code Coverage
-npm test -- --coverage
+npm test -- --coverage 
  
 ## Source Code
  - Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1
