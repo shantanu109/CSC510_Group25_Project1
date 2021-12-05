@@ -28,11 +28,11 @@ Prepare a  markdown  with **three** columns:
 |.5|Use of code formatters. |prettier|
 |.5|Use of style checkers |EsLint|
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. |https://github.com/shantanu109/CSC510_Group25_Project1 |
-|.5|test cases exist  |https://github.com/shantanu109/86_Backend/tree/main/test|
+|.5|test cases exist  |https://github.com/shantanu109/CSC510_Group25_Project1/tree/main/src/tests|
 |.5|Use of code coverage  | config files in GH|
 |.5|other automated analysis tools  |Postman|
-|.5|test cases:.a large proportion of the issues related to handling failing cases. |https://github.com/shantanu109/86_Backend/tree/main/test|
-|.5|test cases are routinely executed |https://github.com/shantanu109/86_Backend/tree/main/test|
+|.5|test cases:.a large proportion of the issues related to handling failing cases. |https://github.com/shantanu109/CSC510_Group25_Project1/tree/main/src/tests|
+|.5|test cases are routinely executed |https://github.com/shantanu109/CSC510_Group25_Project1/tree/main/src/tests|
 |1|Documentation describing how this version improves on the older version|https://github.com/shantanu109/CSC510_Group25_Project1 |
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.| 
 |16| Total|
