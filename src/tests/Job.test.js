@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { Provider } from 'react-redux'
-import Job from '../../components/Job';
-import { configureStore } from '../../store'
+import Job from '../components/Job';
+import { configureStore } from '../store'
 
 const store = configureStore()
 
