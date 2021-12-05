@@ -31,11 +31,12 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "test-coverage": "react-scripts test — env=jsdom — coverage -u",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "test": "react-scripts test --coverage --watchAll",
-    "test-coverage": "react-scripts test — env=jsdom — coverage -u"
+    "test": "react-scripts test --env=jsdom",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
