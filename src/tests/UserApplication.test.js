@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow , mount } from 'enzyme';
-import UserApplication from '../../components/UserApplication';
+import UserApplication from '../components/UserApplication';
 import  {Provider}  from 'react-redux'
-import {configureStore} from '../../store'
+import {configureStore} from '../store'
 
 const store = configureStore()
 
