@@ -1,6 +1,6 @@
-<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a>
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5759097.svg)](https://doi.org/10.5281/zenodo.5759097)
 
-<a href="https://zenodo.org/record/5534872#.YVYLNZrMJPY">Zenodo DOI Link</a>
+<a href="https://doi.org/10.5281/zenodo.5759097">Zenodo DOI Link</a>
 
 Link to frontend repository: https://github.com/shantanu109/WolfJobs \
 Link to backend repository: https://github.com/shantanu109/WolfJobsBackend
