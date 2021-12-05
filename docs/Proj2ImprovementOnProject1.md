@@ -1,5 +1,9 @@
 ## The below points have been improved from the previous phase of the project:
 
+### 1. Provided option of Signup and Login with Google(earlier wasn't working)
+![WhatsApp Image 2021-12-04 at 6 03 47 PM (2)](https://user-images.githubusercontent.com/89566418/144727355-8f862ecf-9fbf-4449-a352-ff21c50effdc.jpeg)
+![WhatsApp Image 2021-12-04 at 6 03 47 PM](https://user-images.githubusercontent.com/89566418/144727272-d3fab7eb-a809-4ed2-b78c-2e74326d8e77.jpeg)
+
 ### 1. A User can now update the quanitiy of the inventory items according to the use of items
 ![WhatsApp Image 2021-12-04 at 5 54 28 PM](https://user-images.githubusercontent.com/89566418/144727042-d26d5419-eca5-482b-ab2b-2779cbdb303f.jpeg)
 ![WhatsApp Image 2021-12-04 at 5 52 16 PM](https://user-images.githubusercontent.com/89566418/144726994-8fdc29fd-6b99-4712-89eb-c038638d71c6.jpeg)
