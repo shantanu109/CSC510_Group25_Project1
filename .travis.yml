@@ -13,3 +13,5 @@ before_script:
   - npm i jest-enzyme
 script:
   - npm test -- --coverage
+after_success:
+  - coverage
