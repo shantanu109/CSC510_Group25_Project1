@@ -10,5 +10,6 @@ cache:
 before_script:
   - npm install -g npm@latest
   - npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+  - npm i jest-enzyme
 script:
   - npm test -- --coverage
