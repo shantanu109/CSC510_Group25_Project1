@@ -3,7 +3,7 @@
 <a href="https://doi.org/10.5281/zenodo.5759097">Zenodo DOI Link</a>
 
 Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1 \
-Link to backend repository: https://github.com/shantanu109/WolfJobsBackend
+Link to backend repository: https://github.com/shantanu109/86_Backend
 
 ### Authors
 
