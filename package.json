@@ -33,8 +33,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "react-scripts test — env=jsdom — watchAll=false — coverage -u",
+    "test-coverage": "react-scripts test — env=jsdom — coverage -u"
   },
   "eslintConfig": {
     "extends": [
