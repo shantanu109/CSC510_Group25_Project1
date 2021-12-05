@@ -114,7 +114,7 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 # To run test cases enter below commands
 npm install --save-dev @wojtekmaj/enzyme-adapter-react-17\
-npm run tests
+npm run test
  
 # Source Code
  - Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1
