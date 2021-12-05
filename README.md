@@ -112,8 +112,8 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-# To run test cases enter below command
-npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+# To run test cases enter below commands
+npm install --save-dev @wojtekmaj/enzyme-adapter-react-17\
 npm run tests
  
 # Source Code
