@@ -1,4 +1,4 @@
-# Contributing to WolfJobs!!
+# Contributing to 86 No More!!
 
 The following is a set of guidelines for contributing to 86 No More. We are open to suggestions to enhance our project.
 
