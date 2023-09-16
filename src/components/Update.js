@@ -96,7 +96,9 @@ class Update extends Component {
 
         <div>
         {job.map((job) => (
-          <Job job={job} />
+          <>
+            <Job job={job} />
+          </>
         ))}
         </div>
         

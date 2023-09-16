@@ -11,12 +11,12 @@ class Job extends Component {
     render() {
         const { job } = this.props;
         const {user} = this.props.auth;
-        console.log('lalallaalaxxxx')
+        console.log('lalallaalaxxxx', job, user)
         
         return (
           
             <div className="post" key={job._id} style={{width:'50vw',marginLeft:'50px'}}>
-              {user.restname == job.restname? 
+              {user._id == job.restid? 
             <div className="post-header">
               
               <div >

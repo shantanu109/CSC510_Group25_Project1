@@ -13,7 +13,6 @@ export default combineReducers({
     auth,
     search,
     menu,
-    
     job,
     application
 })

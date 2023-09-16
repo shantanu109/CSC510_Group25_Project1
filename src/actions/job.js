@@ -70,7 +70,7 @@ export function createJob(
           // console.log('data', data);
           if (data.success) {
             // do something
-            localStorage.setItem("token", data.data.token);
+            // localStorage.setItem("token", data.data.token);
             dispatch(menuSuccess(data.data.menu));
             return;
           }
