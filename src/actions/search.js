@@ -10,7 +10,7 @@ export function searchUsers(searchText) {
     console.log(searchText);
     console.log(typeof searchText);
 
-    if (searchText.length == 0) {
+    if (searchText.length === 0) {
       dispatch(searchResultsSuccess2([]));
     } else {
       fetch(url, {
