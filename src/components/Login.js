@@ -69,7 +69,7 @@ class Login extends Component {
 
     return (
       <div>
-      <form className="login-form">
+      <form className="login-form" onSubmit={this.handleFormSubmit}>
         <span className="login-signup-header">Login</span>
         {error && <div className="alert error-dailog">{error}</div>}
         <div className="field">
@@ -93,10 +93,7 @@ class Login extends Component {
           />
         </div>
         <div className="field">
-          {inProgress ?
-          <button onClick={this.handleFormSubmit} disabled={inProgress}>Logging in...</button>:
-          <button onClick={this.handleFormSubmit} disabled={inProgress}>Log In</button>
-          }
+          <button type="submit" disabled={inProgress}>{inProgress?"Logging in...":"Log In"}</button>
           <div >
       <GoogleLogin
         clientId="890765322406-8kjk4ckk7rna07elrdugioj1elvdo3vo.apps.googleusercontent.com"

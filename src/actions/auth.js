@@ -11,10 +11,11 @@ import {
   CLEAR_AUTH_STATE,
   EDIT_USER_SUCCESSFULL,
   EDIT_USER_FAILED,
-  EDIT_ITEM_SUCCESSFULL
+  EDIT_ITEM_SUCCESSFULL,
 } from "./actionTypes";
 import { getFormBody } from "../helpers/utils";
 import { getAuthTokenFromLocalStorage } from "../helpers/utils";
+import { toast } from "react-toastify";
 // import { fetchUserFriends } from '../actions/friends';
 
 export function startLogin() {
@@ -57,6 +58,7 @@ export function login(email, password) {
           //dispatch action to save user
           localStorage.setItem("token", data.data.token);
           dispatch(loginSuccess(data.data.user));
+          toast.success("Succesfully Logged In")
           //   dispatch(fetchUserFriends(data.data.user._id));
           return;
         }
@@ -88,6 +90,7 @@ export function signup(email, password, confirmPassword, name, restname) {
           // do something
           localStorage.setItem("token", data.data.token);
           dispatch(signupSuccessful(data.data.user));
+          toast.success("Succesfully Signed Up In")
           return;
         }
         dispatch(signupFailed(data.message));
@@ -178,9 +181,6 @@ export function editUser(
         if (data.success) {
           dispatch(editUserSucessfull(data.data.user));
 
-          if (data.data.token) {
-            localStorage.setItem("token", data.data.token);
-          }
           return;
         }
 
@@ -194,33 +194,37 @@ export function editUser(
 export function editItem(
   itemname,
   quantity,
-  
-  
+  itemname_id,
+  datebought,
+  dateexpired,
+  costperitem
 ) {
   return (dispatch) => {
     const url = APIURLS.editItem();
+    
+    const token = localStorage.getItem('token');
 
     fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        //'Authorization': `Bearer ${getAuthTokenFromLocalStorage()}`
+        'Authorization': `Bearer ${token}`
       },
       body: getFormBody({
         itemname,
-        quantity
-        
+        add_quantity: quantity,
+        inventory_id:itemname_id,
+        datebought,
+        dateexpired,
+        costperitem
       }),
     })
       .then((response) => response.json())
       .then((data) => {
         console.log("EDIT PROFILE data", data);
         if (data.success) {
-          dispatch(editItemSucessfull(data.data.inventories));
-
-          if (data.data.token) {
-            localStorage.setItem("token", data.data.token);
-          }
+          toast.success("Succesfully Updated Inventory Item")
+          dispatch(editItemSucessfull(data.inventories));
           return;
         }
 

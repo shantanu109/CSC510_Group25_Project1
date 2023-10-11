@@ -15,7 +15,7 @@ class Job1 extends Component {
         const { job } = this.props;
         const {menu } = this.props;
         const {user} = this.props.auth;
-        console.log('lalallaalaxxxx')
+
         const { isLoggedIn } = this.props.auth;
         return (
           
@@ -23,10 +23,6 @@ class Job1 extends Component {
               {1>0? 
             <div className="post-header">
               
-              <div >
-                <h4 style={{display:'inline-block'}}>Restaurant Name : </h4> 
-                <span style={{marginLeft:'10px'}}>{menu.restname}</span>
-                  </div>
 
 
                   <div >
@@ -43,8 +39,37 @@ class Job1 extends Component {
                   
                   
                   <div >
-                <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 
-                <span style={{marginLeft:'10px'}}>{menu.quantity}</span>
+                    <h4 style={{display:'inline-block',marginTop:'-12px'}}>Ingredients</h4> 
+                  <div className='ingredient_container'>
+                  <div className='ingredient_tab'>
+                  <div className='field'>
+                            <span style={{marginLeft:'10px',fontWeight:"bold"}}>No</span>
+                          </div>
+                          <div className='field'>
+                            <span style={{marginLeft:'10px',fontWeight:"bold"}}>Name</span>
+                          </div>
+                          <div className='field'>
+                            <span style={{marginLeft:'10px',fontWeight:"bold"}}>Quantity</span>
+                          </div>
+                        </div>
+                  {
+                    menu.ingredients.map((ingredient,index)=>{
+                      return(
+                        <div className='ingredient_tab'>
+                          <div key={index} className='field'>
+                            <span style={{marginLeft:'10px'}}>{index+1}</span>
+                          </div>
+                          <div key={index} className='field'>
+                            <span style={{marginLeft:'10px'}}>{ingredient.inventory_id.itemname}</span>
+                          </div>
+                          <div key={index} className='field'>
+                            <span style={{marginLeft:'10px'}}>{ingredient.quantity}</span>
+                          </div>
+                        </div>
+                      )
+                    })
+                  }
+                  </div>
                   </div> 
                 
                 

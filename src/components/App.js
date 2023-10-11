@@ -13,6 +13,9 @@ import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import { fetchJobs ,fetchMenus} from '../actions/job';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const PrivateRoute = (privateRouteProps) => {
@@ -78,9 +81,20 @@ class App extends React.Component {
     const {user} = this.props.auth;
     const {job} = this.props;
     return (
+      
       <Router>
       <div className="wrapper">
-      
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Navbar />
         {/* <Home /> */}
 
