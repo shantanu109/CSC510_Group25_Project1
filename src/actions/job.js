@@ -108,7 +108,12 @@ export function createJob(
         })
         .then((data) => {
           console.log('dsssdsds',data);
+          if(!data.jobs){
+            data.jobs = null
+          }
           dispatch(updateJobs(data.jobs));
+        }).catch((e)=>{
+          console.log(e)
         });
     };
   }
@@ -124,7 +129,10 @@ export function createJob(
         })
         .then((data) => {
           console.log('menusssssss',data);
+          if(!data.jobs) data.menu = null 
           dispatch(updateMenu(data.menu));
+        }).catch((e)=>{
+          console.log(e)
         });
     };
   }
