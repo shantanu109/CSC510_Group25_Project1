@@ -15,6 +15,7 @@ import { fetchJobs ,fetchMenus} from '../actions/job';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Order from './Order';
 
 
 
@@ -142,9 +143,13 @@ class App extends React.Component {
         <PrivateRoute
               path="/menu"
               component={Menu}
-              isLoggedIn={auth.isLoggedIn}
-            
-              
+              isLoggedIn={auth.isLoggedIn}              
+        />
+
+        <PrivateRoute
+              path="/order"
+              component={Order}
+              isLoggedIn={auth.isLoggedIn}              
         />
         
         
