@@ -12,17 +12,14 @@ class Job extends Component {
         const { job } = this.props;
         const {user} = this.props.auth;
         console.log('lalallaalaxxxx', job, user)
-        
+
         return (
           
             <div className="post" key={job._id} style={{width:'50vw',marginLeft:'50px'}}>
               {user._id == job.restid? 
             <div className="post-header">
               
-              <div >
-                <h4 style={{display:'inline-block'}}>Restaurant Name : </h4> 
-                <span style={{marginLeft:'10px'}}>{job.restname}</span>
-                  </div>
+
 
 
                   <div >
@@ -38,12 +35,12 @@ class Job extends Component {
 
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Expiration Date : </h4> 
-                <span style={{marginLeft:'10px'}}>{job.dateexpired}</span>
+                <span style={{marginLeft:'10px'}}>{new Date(job.dateexpired).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' })}</span>
                   </div>
 
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Date Bought : </h4> 
-                <span style={{marginLeft:'10px'}}>{job.datebought}</span>
+                <span style={{marginLeft:'10px'}}>{new Date(job.dateexpired).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})}</span>
                   </div>
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 

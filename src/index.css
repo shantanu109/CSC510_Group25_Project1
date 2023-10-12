@@ -436,21 +436,38 @@ nav .nav-links ul li:hover {
   border-radius: 6px;
 
 }
+
+.ingredient_used{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  gap: 1rem;
+}
+
+.ingredient_tab{
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+}
+
 .field {
   width: 100%;
+  margin-bottom: 4px;
 }
 .field2 {
   width: 100%;
 }
-.field input {
+.field input, .field select {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   border-radius: 6px;
   width: 100%;
   height: 40px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px;
   font-size: 15px;
+  outline: none;
 }
 .field2 input {
   border: 1px solid rgba(0, 0, 0, 0.12);
