@@ -158,6 +158,7 @@ class Goal extends Component {
             placeholder="Quantity"
             type="number"
             required
+            min="1"
             onChange={(e) => this.handleInputChange('quantity', e.target.value)}
           />
         </div>
@@ -234,6 +235,7 @@ class Goal extends Component {
                   <input
                     placeholder="Quantity"
                     type="number"
+                    min="1"
                     value={job.find((jb)=> jb._id === this.state.itemname_id).quantity}
                     required
                     disabled
@@ -248,6 +250,7 @@ class Goal extends Component {
           <input
             placeholder="Quantity"
             type="number"
+            min="1"
             required
             onChange={(e) => this.handleInputChange('quantity', e.target.value)}
           />

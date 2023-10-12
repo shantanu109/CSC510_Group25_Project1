@@ -70,7 +70,7 @@ class Navbar extends React.Component {
             
             
               <div className="header__option ">
-                <Link to="/history">
+                <Link to="/order">
                   <TimelineIcon fontSize="large" />
                 </Link>
               </div>

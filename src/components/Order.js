@@ -9,23 +9,20 @@ import {clearsearchstate} from '../actions/search';
 
 import Widgets from './Widgets.js';
 import {createJob, fetchMenus} from '../actions/job';
-import { fetchJobs,createMenu} from '../actions/job';
+import { fetchJobs,createMenu,fetchOrder,createOrder} from '../actions/job';
 import Job1 from './Job1';
 import { toast } from 'react-toastify';
+import Job2 from './Job2';
 
 
-class Menu extends Component {
+class Order extends Component {
     constructor(props) {
         super(props);
     
         this.state = {
-          restname:'',
-          restid: '',
-          menuname:'',
-          quantity:'0',
-          costmenu:'',
-          ingredients: [{ inventory_id: '', quantity: '' }],
+          items: [{ id: '', quantity: '' ,cost:''}],
           editMode: false,
+          totalCost:0
         };
 
         this.formRef = React.createRef(null)
@@ -60,12 +57,12 @@ class Menu extends Component {
       }
 
       addMoreIngredient = () => {
-        if(this.state.ingredients.length === this.props.job.length){
-          toast.error("No more Ingredients Left to Add")
+        if(this.state.items.length === this.props.menu.length){
+          toast.error("No more Menu Item Left to Add")
           return
         }
         this.setState((prevState) => ({
-          ingredients: [...prevState.ingredients, { inventory_id: '', quantity: '' }],
+            items: [...prevState.items, { id: '', quantity: '' }],
         }));
       }
 
@@ -73,29 +70,24 @@ class Menu extends Component {
   handleSave = (e) => {
     e.preventDefault()
 
-    const {menuname,ingredients,costmenu} = this.state;
+    const {items} = this.state;
 
     const {user} = this.props.auth;
 
-    this.props.dispatch(createMenu(menuname,ingredients,costmenu))
+    this.props.dispatch(createOrder(items))
 
     this.formRef.current.reset()
 
     this.setState({
-      restname:'',
-      restid: '',
-      menuname:'',
-      quantity:'0',
-      costmenu:'',
-      ingredients: [{ inventory_id: '', quantity: '' }],
+      items: [{ id: '', quantity: '',cost:'' }],
       editMode: false,
     })
 
   }
 
   componentDidMount() {
-    this.props.dispatch(fetchJobs());
     this.props.dispatch(fetchMenus());
+    this.props.dispatch(fetchOrder());
   }
 
 
@@ -107,30 +99,20 @@ class Menu extends Component {
       
       const {menu} = this.props;
       const {job} = this.props;
+      const {order} = this.props;
 
-      const {ingredients} = this.state
+      const {items} = this.state
         
       
         return (
             <div>
               
            <form className="goal-form" style={{width:'650px',height:'fit-content',marginLeft:'100px'}} onSubmit={this.handleSave} ref={this.formRef}>
-           <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Menu Item</span>
+           <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Order</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
-            
 
-            <div className="field">
-              <label>Menu Item Name</label>
-              <input
-                placeholder="Item Name"
-                type="text"
-                required
-                onChange={(e) => this.handleInputChange('menuname', e.target.value)}
-              />
-            </div>
-
-          <div className="field">
+          {/* <div className="field">
             <label>Item Price</label>
             <input
               placeholder="Price"
@@ -138,27 +120,34 @@ class Menu extends Component {
               required
               onChange={(e) => this.handleInputChange('costmenu', e.target.value)}
             />
-          </div>
+          </div> */}
 
-          <span className='login-signup-header' style={{fontSize:"22px",marginBottom:"20px"}}>Ingredient Used</span>
+          <span className='login-signup-header' style={{fontSize:"22px",marginBottom:"20px"}}>Item Ordered</span>
 
           <div className='ingredient_used_container' style={{width:"100%"}}>
               {
-                ingredients.map((ingredient,index)=>{
+                items.map((odr,index)=>{
                   return(
                     <div className='ingredient_used'>
                       <div key={index} className='field'>
                         <label>Ingredient Name</label>
                         <select onChange={(e) => {
-                          const newIngredients = [...this.state.ingredients];
-                          newIngredients[index].inventory_id = e.target.value;
-                          this.setState({ ingredients: newIngredients });  
+                          const newIngredients = [...this.state.items];
+                          newIngredients[index].id = e.target.value;
+                          this.setState({ items: newIngredients });
+
+                          if(newIngredients[index].quantity){
+                            newIngredients[index].cost = newIngredients[index].quantity * this.props.menu.find((ing)=>ing._id===newIngredients[index].id).costmenu
+                            this.setState({
+                                items: newIngredients
+                            })
+                        }
                         }
                         }>
                           <option value="">Select Item</option>
-                          {job.length>0 && job.map((jb) => {
+                          {menu.length>0 && menu.map((jb) => {
                             return (
-                              <option value={jb._id} disabled={this.state.ingredients.findIndex((ing)=>ing.inventory_id===jb._id)>-1?true:false}>{jb.itemname}</option>
+                              <option value={jb._id} disabled={this.state.items.findIndex((ing)=>ing.id===jb._id)>-1?true:false}>{jb.menuname}</option>
                             )
                           })}
                         </select>
@@ -171,9 +160,18 @@ class Menu extends Component {
                           required
                           min="1"
                           onChange={(e) => {
-                            const newIngredients = [...this.state.ingredients];
+                            const newIngredients = [...this.state.items];
                             newIngredients[index].quantity = e.target.value;
-                            this.setState({ ingredients: newIngredients });
+                            this.setState({ items: newIngredients });
+
+                            if(newIngredients[index].id){
+                                newIngredients[index].cost = e.target.value * this.props.menu.find((ing)=>ing._id===newIngredients[index].id).costmenu
+                                this.setState({
+                                    items: newIngredients
+                                })
+                            }
+                            
+
                           }}
                         />
                       </div>
@@ -185,7 +183,20 @@ class Menu extends Component {
             
           </div>
           <div className="field">
-           <button onClick={this.addMoreIngredient} className='button save-btn' type="button" style={{width: "30%",fontSize: '16px',borderRadius: "8px"}}>Add More Ingredient</button>
+                  <label>Total Cost</label>
+                  <input
+                    placeholder="Quantity"
+                    type="text"
+                    value={`$ ${this.state.items.reduce((total, item) => {
+                        return total +item.cost;
+                      }, 0)}`}
+                    required
+                    disabled
+                    // onChange={(e) => this.handleInputChange('quantity', e.target.value)}
+                  />
+                </div>
+          <div className="field">
+           <button onClick={this.addMoreIngredient} className='button save-btn' type="button" style={{width: "30%",fontSize: '16px',borderRadius: "8px"}}>Add More Item</button>
           </div>
 
 
@@ -193,7 +204,7 @@ class Menu extends Component {
        
         
         <div className="field">
-        <button className="button save-btn" type="submit" >Save</button>
+        <button className="button save-btn" type="submit" >Place Order</button>
         </div>
         
         
@@ -203,8 +214,8 @@ class Menu extends Component {
 
          
               <div style={{marginLeft:'57px',width:'650px'}}>
-        {menu.map((menu) => (
-          <Job1 menu={menu} />
+        {order.map((ord) => (
+          <Job2 order={ord} />
         ))}
         </div>  
         
@@ -223,9 +234,10 @@ function mapStateToProps(state) {
       results: state.search.results,
       job:state.job,
       menu:state.menu,
+      order:state.order
     };
   }
   
-  export default connect(mapStateToProps)(Menu);
+  export default connect(mapStateToProps)(Order);
 
 

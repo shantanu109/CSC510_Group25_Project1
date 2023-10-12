@@ -8,7 +8,9 @@ import {
     
     ADD_MENU,
     UPDATE_MENU,
-    JOB_FAILED
+    JOB_FAILED,
+    ADD_ORDER,
+    UPDATE_ORDER
   } from './actionTypes';
 
 
@@ -90,6 +92,39 @@ export function createJob(
     };
   }
   
+  export function createOrder(
+    items
+  ) {
+    return (dispatch) => {
+      
+      const url = APIURLS.order();
+
+      const token = localStorage.getItem('token');
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          'Authorization': `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          items
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('dataOrder', data);
+          if (data.success) {
+            // do something
+            // localStorage.setItem("token", data.data.token);
+            toast.success('New Order has been Placed')
+            dispatch(orderSuccess(data.data.order));
+            return;
+          }
+          toast.error(data.message)
+          // dispatch(signupFailed(data.message));
+        });
+    };
+  }
 
 
 
@@ -104,6 +139,13 @@ export function createJob(
     return {
       type: ADD_MENU,
       menu,
+    };
+  }
+
+  export function orderSuccess(order) {
+    return {
+      type: ADD_ORDER,
+      order,
     };
   }
 
@@ -134,6 +176,8 @@ export function createJob(
         });
     };
   }
+
+
   export function fetchMenus() {
     return (dispatch) => {
       
@@ -159,6 +203,32 @@ export function createJob(
         });
     };
   }
+
+  export function fetchOrder() {
+    return (dispatch) => {
+      
+      const url = APIURLS.fetchOrder();
+
+      const token = localStorage.getItem('token');
+      let auth = {}
+      if(token){
+        auth= { headers: { 'Authorization': `Bearer ${token}` }}
+      }
+  
+      fetch(url,{...auth})
+        .then((response) => {
+          console.log('Response', response);
+          return response.json();
+        })
+        .then((data) => {
+          console.log('Order',data);
+          if(!data.order) data.order = [] 
+          dispatch(updateOrder(data.order));
+        }).catch((e)=>{
+          console.log(e)
+        });
+    };
+  }
   
 
 
@@ -173,6 +243,13 @@ export function updateJobs(jobs) {
     return {
       type: UPDATE_MENU,
       menu,
+    };
+  }
+
+  export function updateOrder(order) {
+    return {
+      type: UPDATE_ORDER,
+      order,
     };
   }
 

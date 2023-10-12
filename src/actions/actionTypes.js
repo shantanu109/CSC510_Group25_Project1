@@ -27,6 +27,10 @@ export const ADD_MENU = "ADD_MENU";
 export const UPDATE_MENU = "UPDATE_MENU";
 export const CLOSE_MENU = "CLOSE_MENU";
 
+export const ADD_ORDER = "ADD_ORDER";
+export const UPDATE_ORDER = "UPDATE_ORDER";
+export const CLOSE_ORDER = "CLOSE_ORDER";
+
 export const ADD_APPLICATION = "ADD_APPLICATION";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
 export const ACCEPT_APPLICATION = "ACCEPT_APPLICATION";

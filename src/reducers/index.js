@@ -8,13 +8,15 @@ import menu from './menu';
 
 import job from './job';
 import application from './application'
+import order from "./order";
 
 export default combineReducers({
     auth,
     search,
     menu,
     job,
-    application
+    application,
+    order
 })
 
 
