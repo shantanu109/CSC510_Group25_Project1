@@ -27,14 +27,15 @@ Chart.pluginService.register(
 //   Legend
 // );
 
-export const options = {
-  plugins: {
-    title: {
-      display: true,
-      text: 'Chart.js Horizontal Bar Chart',
-    },
-  },
-};
+// export const options = {
+//   title: {
+//     display: true,
+//     text: 'Total Sale', // Customize the title text
+//     positionY: -20, // Adjust the vertical position of the title
+//     color: 'black', // Color of the title
+//     font: '16px Arial', // Font styling for the title
+//   },
+// };
 
 class History extends Component {
 
@@ -94,6 +95,26 @@ class History extends Component {
       const labels = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
       const data = ['',]
       const datacost = ['',]
+
+      const options = {
+        title: {
+          display: true,
+          text: `Total Sale ${this.state.menuName}: ${this.state.menuName?finalData.find((dt)=>dt.menuName === this.state.menuName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
+          positionY: -20, // Adjust the vertical position of the title
+          color: 'black', // Color of the title
+          font: '16px Arial', // Font styling for the title
+        },
+      };
+
+      const options2 = {
+        title: {
+          display: true,
+          text: `Total Usage ${this.state.itemName}: ${this.state.itemName?finalData2.find((dt)=>dt.itemName === this.state.itemName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
+          positionY: -20, // Adjust the vertical position of the title
+          color: 'black', // Color of the title
+          font: '16px Arial', // Font styling for the title
+        },
+      };
       
        
 
@@ -170,7 +191,7 @@ class History extends Component {
           {
             this.state.itemName!=="" && (
               <Bar
-                options={options}
+                options={options2}
                 data={{
                   labels: labels,
                   datasets: [
