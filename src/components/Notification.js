@@ -118,21 +118,21 @@ class Notification extends Component {
             <div>
                 
              <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-  }}>
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexDirection: 'column',
+            }}>
     {
       (1>0) ?
         <Box flexDirection="row-reverse">
           {
             job.map(job => {
-                
-            var parts2 = job.dateexpired.split('/')
-            console.log('parrrtptptps',parts2)
-            console.log('parrrt1',parts)
-            if (Number(parts2[0]) - Number(parts[2]) < 1 && Number(parts2[1]) - Number(parts[1] < -2) && Number(parts[0]) > Number(parts2[2])){
+              
+              var parts2 = job.dateexpired.split('/')
+              console.log('parrrtptptps',parts2)
+              console.log('parrrt1',parts)
+              if (Number(parts2[0]) - Number(parts[2]) < 1 && Number(parts2[1]) - Number(parts[1] < -2) && Number(parts[0]) > Number(parts2[2])){
 
               return <Card  key={job._id}>
                 <CardContent>

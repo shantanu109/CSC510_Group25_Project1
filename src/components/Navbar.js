@@ -13,6 +13,7 @@ import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 import InventoryIcon from '@material-ui/icons/InsertDriveFile';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+import ReceiptIcon from '@material-ui/icons/Receipt';
 
 class Navbar extends React.Component {
   logOut = () => {
@@ -50,36 +51,44 @@ class Navbar extends React.Component {
         {auth.isLoggedIn && (
           <div className="header__middle" style={{ marginLeft: "20px" }}>
             <div className="header__option ">
-              <Link to="/menu">
-                <RestaurantMenuIcon fontSize="large" />
+              <Link to="/menu" title="Menu">
+                <RestaurantMenuIcon fontSize="large"/>
               </Link>
             </div>
             
               <div className="header__option ">
-                <Link to="/goal">
+                <Link to="/goal" title="Inventory">
                   <ListAltIcon fontSize="large" />
                 </Link>
               </div>
             
            
               <div className="header__option ">
-                <Link to="/update">
+                <Link to="/update" title="Inventory List">
                   <InventoryIcon fontSize="large" />
                 </Link>
               </div>
             
             
               <div className="header__option ">
-                <Link to="/order">
+                <Link to="/order" title="Order">
+                  <ReceiptIcon fontSize="large" />
+                </Link>
+              </div>
+
+              <div className="header__option ">
+                <Link to="/history" title="Analytics">
                   <TimelineIcon fontSize="large" />
                 </Link>
               </div>
 
               <div className="header__option ">
-                <Link to="/notification">
+                <Link to="/notification" title="Notification">
                   <NotificationsActiveIcon fontSize="large" />
                 </Link>
               </div>
+
+              
             
 
           </div>
