@@ -53,7 +53,7 @@ class Job1 extends Component {
                           </div>
                         </div>
                   {
-                    menu.ingredients.map((ingredient,index)=>{
+                    menu && menu.ingredients.map((ingredient,index)=>{
                       return(
                         <div className='ingredient_tab'>
                           <div key={index} className='field'>

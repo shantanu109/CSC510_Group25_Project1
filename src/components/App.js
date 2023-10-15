@@ -96,7 +96,7 @@ class App extends React.Component {
           draggable
           pauseOnHover
         />
-        <Navbar />
+        <Navbar job={job}/>
         {/* <Home /> */}
 
       <Switch>
