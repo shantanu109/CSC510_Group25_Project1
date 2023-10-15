@@ -40,7 +40,7 @@ class Job extends Component {
 
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Date Bought : </h4> 
-                <span style={{marginLeft:'10px'}}>{new Date(job.dateexpired).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})}</span>
+                <span style={{marginLeft:'10px'}}>{new Date(job.datebought).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})}</span>
                   </div>
                   <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 

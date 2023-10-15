@@ -250,10 +250,11 @@ class Goal extends Component {
           <input
             placeholder="Quantity"
             type="number"
-            min="1"
             required
             onChange={(e) => this.handleInputChange('quantity', e.target.value)}
+            style={{marginBottom:"0px"}}
           />
+          <div style={{color:"#a1a197",fontSize:"14px",marginBottom:"20px"}}>If you want to Decrement Quantity add it with '-'. for eg:-2</div>
         </div>
 
         <div className="field">

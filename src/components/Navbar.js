@@ -14,8 +14,15 @@ import InventoryIcon from '@material-ui/icons/InsertDriveFile';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ReceiptIcon from '@material-ui/icons/Receipt';
+import { fetchJobs } from "../actions/job";
 
 class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      pop:false,
+    };
+  }
   logOut = () => {
     localStorage.removeItem("token");
     this.props.dispatch(logoutUser());
@@ -27,9 +34,39 @@ class Navbar extends React.Component {
     this.props.dispatch(searchUsers(searchText));
   };
 
+  componentDidUpdate(prevProps){
+    const {job} = this.props;
+    console.log(job)
+    if (this.props.job !== prevProps.job) {
+      const {job} = this.props;
+      
+      if(job){
+        for (const jb of job) {
+          console.log("Runnign")
+          const utc2 = new Date();
+          const jobExpiredDate = new Date(jb.dateexpired);
+          const twoDaysBefore = new Date(jobExpiredDate);
+          
+          twoDaysBefore.setDate(jobExpiredDate.getDate() - 2);
+        
+          if (twoDaysBefore.getTime() <= utc2.getTime() || jb.quantity < 10) {
+            this.setState({
+              pop:true
+            })
+            break; // Exit the loop when the condition is met
+          }
+        }
+      }
+    }
+  }
+
   render() {
     const { auth } = this.props;
     const { user } = this.props.auth;
+    const {job} = this.props;
+
+    let utc2 = new Date();
+
 
     return (
       <nav className="header">
@@ -84,7 +121,7 @@ class Navbar extends React.Component {
 
               <div className="header__option ">
                 <Link to="/notification" title="Notification">
-                  <NotificationsActiveIcon fontSize="large" />
+                  <NotificationsActiveIcon fontSize="large" color={this.state.pop?"secondary":""} className={this.state.pop?`constant-tilt-shake`:""}/>
                 </Link>
               </div>
 

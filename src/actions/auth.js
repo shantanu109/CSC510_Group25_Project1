@@ -16,6 +16,7 @@ import {
 import { getFormBody } from "../helpers/utils";
 import { getAuthTokenFromLocalStorage } from "../helpers/utils";
 import { toast } from "react-toastify";
+import { fetchJobs } from "./job";
 // import { fetchUserFriends } from '../actions/friends';
 
 export function startLogin() {
@@ -225,6 +226,7 @@ export function editItem(
         if (data.success) {
           toast.success("Succesfully Updated Inventory Item")
           dispatch(editItemSucessfull(data.inventories));
+          dispatch(fetchJobs());
           return;
         }
 
