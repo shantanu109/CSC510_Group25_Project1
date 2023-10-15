@@ -13,6 +13,8 @@ import RestaurantMenuIcon from '@material-ui/icons/RestaurantMenu';
 import InventoryIcon from '@material-ui/icons/InsertDriveFile';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
+
+let firstLetter = '';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import { fetchJobs } from "../actions/job";
 
@@ -67,6 +69,7 @@ class Navbar extends React.Component {
 
     let utc2 = new Date();
 
+    firstLetter = user && user.name ? user.name.charAt(0).toUpperCase() : '';
 
     return (
       <nav className="header">
@@ -136,7 +139,8 @@ class Navbar extends React.Component {
               <div className="user">
                 <Link to="/settings">
                   <img
-                    src="https://cdn-icons.flaticon.com/png/512/668/premium/668709.png?token=exp=1636045281~hmac=01dc4c9a3c91ca3c5bae9c160e2fb7c6"
+                    // src="https://cdn-icons.flaticon.com/png/512/668/premium/668709.png?token=exp=1636045281~hmac=01dc4c9a3c91ca3c5bae9c160e2fb7c6"
+                    src={`https://ui-avatars.com/api/?name=${firstLetter}`}
                     alt="user-dp"
                     id="user-dp"
                     style={{ marginLeft: "0px" }}
@@ -206,7 +210,7 @@ class Navbar extends React.Component {
     );
   }
 }
-
+export { firstLetter };
 
 function mapStateToProps(state) {
   return {
