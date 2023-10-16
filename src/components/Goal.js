@@ -137,7 +137,7 @@ class Goal extends Component {
         return (
             <div>
               
-           <form className="goal-form" style={{width:'600px',height:'600px',marginLeft:'100px'}} onSubmit={this.handleSave}  ref={this.createForm}>
+           <form className="goal-form" style={{width:'600px',height:'600px',marginLeft:'31.5%'}} onSubmit={this.handleSave}  ref={this.createForm}>
            <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Inventory</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
@@ -204,7 +204,7 @@ class Goal extends Component {
         </form>
 
          
-        <form className="goal-form" style={{width:'600px',height:'fit-content',marginLeft:'100px'}} onSubmit={this.handleSave1} ref={this.updateForm}>
+        <form className="goal-form" style={{width:'600px',height:'fit-content',marginLeft:'31.5%'}} onSubmit={this.handleSave1} ref={this.updateForm}>
            <span className="login-signup-header" style={{margin:"20px 0px"}}>Update Item</span>
             {error && <div className="alert error-dailog">{error}</div>}
             

@@ -114,7 +114,7 @@ class Menu extends Component {
         return (
             <div>
               
-           <form className="goal-form" style={{width:'650px',height:'fit-content',marginLeft:'100px'}} onSubmit={this.handleSave} ref={this.formRef}>
+           <form className="goal-form" style={{width:'650px',height:'fit-content',marginLeft:'30%'}} onSubmit={this.handleSave} ref={this.formRef}>
            <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Menu Item</span>
             {error && <div className="alert error-dailog">{error}</div>}
             
@@ -202,7 +202,7 @@ class Menu extends Component {
         </form>
 
          
-              <div style={{marginLeft:'57px',width:'650px'}}>
+              <div style={{marginLeft:'23.5%',width:'650px'}}>
         {menu.map((menu) => (
           <Job1 menu={menu} />
         ))}
