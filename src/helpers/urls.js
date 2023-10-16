@@ -18,7 +18,6 @@ export const APIURLS = {
     
     fetchMenus: () => `${API_ROOT}/users/fetchmenus`,
 
-   
-    
+    fetchAnalytics: () => `${API_ROOT}/users/analytics`, 
 }
 

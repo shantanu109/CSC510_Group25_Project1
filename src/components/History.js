@@ -13,6 +13,7 @@ import Chart, {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { fetchAnalytics } from '../actions/job';
 
 Chart.pluginService.register(
   Title,
@@ -54,7 +55,7 @@ class History extends Component {
 
     const {job} = this.props;
     const {labels,datasets} = this.state
-    
+    this.props.dispatch(fetchAnalytics());
 
 
     
@@ -62,7 +63,8 @@ class History extends Component {
 
     
     render() {
-      const {job} = this.props;
+      const {job,analytics} = this.props;
+      const {inventoryAnalytics,orderAnalytics} = analytics
       const {user} = this.props.auth;
       console.log('JOVVVVVV',job)
 
@@ -92,28 +94,60 @@ class History extends Component {
         },
       ]
 
-      const labels = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+      // const labels = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+      const labels = [];
+
+    for (let i = 0; i < 7; i++) {
+      const today = new Date(); // Get today's date
+      today.setDate(today.getDate() - i); // Subtract 'i' days from today
+
+      const month = String(today.getMonth() + 1).padStart(2, '0'); // Add 1 to month since it's zero-based
+      const day = String(today.getDate()).padStart(2, '0');
+      const year = today.getFullYear();
+
+      const date = `${month}/${day}/${year}`;
+      labels.push(date);
+    }
+    labels.reverse()
+
+    console.log(labels);
       const data = ['',]
       const datacost = ['',]
 
       const options = {
         title: {
           display: true,
-          text: `Total Sale ${this.state.menuName}: ${this.state.menuName?finalData.find((dt)=>dt.menuName === this.state.menuName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
+          text: `Total Sale ${this.state.menuName}: ${this.state.menuName?orderAnalytics.find((dt)=>dt.menuName === this.state.menuName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
           positionY: -20, // Adjust the vertical position of the title
           color: 'black', // Color of the title
           font: '16px Arial', // Font styling for the title
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              min: 0
+            }    
+          }]
         },
       };
 
       const options2 = {
         title: {
           display: true,
-          text: `Total Usage ${this.state.itemName}: ${this.state.itemName?finalData2.find((dt)=>dt.itemName === this.state.itemName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
+          text: `Total Usage ${this.state.itemName}: ${this.state.itemName?inventoryAnalytics.find((dt)=>dt.itemName === this.state.itemName).data.reduce((acc, value) => acc + value, 0):0}`, // Customize the title text
           positionY: -20, // Adjust the vertical position of the title
           color: 'black', // Color of the title
           font: '16px Arial', // Font styling for the title
         },
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              min: 0
+            }    
+          }]
+        }
       };
       
        
@@ -130,7 +164,7 @@ class History extends Component {
                         }
                         }>
                           <option value="">Select Menu Item to view it's Analysis</option>
-                          {finalData.length>0 && finalData.map((jb) => {
+                          {orderAnalytics && orderAnalytics.length>0 && orderAnalytics.map((jb) => {
                             return (
                               <option value={jb.menuName} >{jb.menuName}</option>
                             )
@@ -149,7 +183,7 @@ class History extends Component {
                   datasets: [
                     {
                       label: this.state.menuName,
-                      data: finalData.find((dt)=>dt.menuName === this.state.menuName).data,
+                      data: orderAnalytics.find((dt)=>dt.menuName === this.state.menuName).data,
                       backgroundColor: 'rgba(255, 99, 132, 0.5)',
                       // backgroundColor: [
                       //   'rgba(255, 99, 132, 0.2)'
@@ -160,7 +194,7 @@ class History extends Component {
                     },
                   ],
                 }}
-                height = {10}
+                height = {20}
                 width = {50}
                 
               />
@@ -178,7 +212,7 @@ class History extends Component {
                         }
                         }>
                           <option value="">Select Inventory Item to view it's Analysis</option>
-                          {finalData2.length>0 && finalData2.map((jb) => {
+                          {inventoryAnalytics && inventoryAnalytics.length>0 && inventoryAnalytics.map((jb) => {
                             return (
                               <option value={jb.itemName} >{jb.itemName}</option>
                             )
@@ -197,7 +231,7 @@ class History extends Component {
                   datasets: [
                     {
                       label: this.state.itemName,
-                      data: finalData2.find((dt)=>dt.itemName === this.state.itemName).data,
+                      data: inventoryAnalytics.find((dt)=>dt.itemName === this.state.itemName).data,
                       backgroundColor: 'rgba(53, 162, 235, 0.5)',
                       // backgroundColor: [
                       //   'rgba(255, 99, 132, 0.2)'
@@ -208,7 +242,7 @@ class History extends Component {
                     },
                   ],
                 }}
-                height = {10}
+                height = {20}
                 width = {50}
               />
             )
@@ -251,9 +285,7 @@ function mapStateToProps(state) {
     return {
       auth: state.auth,
       job:state.job,
-      
-
-      
+      analytics: state.analytics
     };
   }
   

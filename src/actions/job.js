@@ -10,7 +10,8 @@ import {
     UPDATE_MENU,
     JOB_FAILED,
     ADD_ORDER,
-    UPDATE_ORDER
+    UPDATE_ORDER,
+    UPDATE_ANALYTICS
   } from './actionTypes';
 
 
@@ -142,6 +143,8 @@ export function createJob(
     };
   }
 
+  
+
   export function orderSuccess(order) {
     return {
       type: ADD_ORDER,
@@ -229,6 +232,32 @@ export function createJob(
         });
     };
   }
+
+  export function fetchAnalytics() {
+    return (dispatch) => {
+      
+      const url = APIURLS.fetchAnalytics();
+
+      const token = localStorage.getItem('token');
+      let auth = {}
+      if(token){
+        auth= { headers: { 'Authorization': `Bearer ${token}` }}
+      }
+  
+      fetch(url,{...auth})
+        .then((response) => {
+          console.log('Response', response);
+          return response.json();
+        })
+        .then((data) => {
+          console.log('Analytics',data);
+          if(!data.orderAnalytics && !data.inventoryAnalytics) data.analytics = [] 
+          dispatch(updateAnalytics({orderAnalytics:data.orderAnalytics,inventoryAnalytics:data.inventoryAnalytics}));
+        }).catch((e)=>{
+          console.log(e)
+        });
+    };
+  }
   
 
 
@@ -250,6 +279,13 @@ export function updateJobs(jobs) {
     return {
       type: UPDATE_ORDER,
       order,
+    };
+  }
+
+  export function updateAnalytics(analytics) {
+    return {
+      type: UPDATE_ANALYTICS,
+      analytics,
     };
   }
 
