@@ -27,6 +27,9 @@ export const ADD_MENU = "ADD_MENU";
 export const UPDATE_MENU = "UPDATE_MENU";
 export const CLOSE_MENU = "CLOSE_MENU";
 
+export const UPDATE_ANALYTICS = "UPDATE_ANALYTICS";
+export const CLOSE_ANALYTICS = "CLOSE_ANALYTICS";
+
 export const ADD_ORDER = "ADD_ORDER";
 export const UPDATE_ORDER = "UPDATE_ORDER";
 export const CLOSE_ORDER = "CLOSE_ORDER";
