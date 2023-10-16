@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import React from "react";
@@ -14,9 +13,11 @@ import InventoryIcon from '@material-ui/icons/InsertDriveFile';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 
-let firstLetter = '';
+
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import { fetchJobs } from "../actions/job";
+
+let firstLetter = '';
 
 class Navbar extends React.Component {
   constructor(props) {
