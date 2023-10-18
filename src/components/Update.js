@@ -94,7 +94,7 @@ class Update extends Component {
             <div>
              
 
-        <div>
+        <div style={{width:'650px',height:'fit-content',marginLeft:'23%'}}>
         {job.map((job) => (
           <>
             <Job job={job} />

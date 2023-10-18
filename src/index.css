@@ -19,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -127,7 +128,7 @@ code {
   color: #616161;
   border-right: none;
   border-left: none;
-  border-bottom: ;
+  /* border-bottom: ; */
   cursor: pointer;
   /* justify-content: space-evenly; */
   margin-bottom: 10px;
@@ -848,7 +849,6 @@ nav .nav-links ul li:hover {
   display: flex;
   align-items: flex-end;
   padding:10px;
-  
 
 }
 
