@@ -118,6 +118,7 @@ class Goal extends Component {
             <div className="field">
               
           <input
+            id="itname"
             placeholder="Item Name"
             type="text"
             required
@@ -127,6 +128,7 @@ class Goal extends Component {
 
         <div className="field">
           <input
+            id="quan"
             placeholder="Quantity"
             type="text"
             required
@@ -136,6 +138,7 @@ class Goal extends Component {
 
         <div className="field">
           <input
+            id="cost"
             placeholder="Cost per item"
             type="text"
             required
@@ -144,6 +147,7 @@ class Goal extends Component {
         </div>
         <div className="field">
           <input
+            id="bdate"
             placeholder="Date Bought (mm/dd/yy)"
             type="text"
             required
@@ -153,6 +157,7 @@ class Goal extends Component {
 
         <div className="field">
           <input
+            id="edate"
             placeholder="Expiration Date (mm/dd/yy)"
             type="text"
             required
