@@ -41,9 +41,11 @@ class Goal extends Component {
         this.setState({
           itemname:''
         })
-    
+
+        alert("updated the quantity of "+itemname);
+        document.getElementById("itnameupdate").value = "";
+        document.getElementById("quanupdate").value = "";
        
-        
       }
     
    
