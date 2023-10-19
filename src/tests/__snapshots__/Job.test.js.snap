@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createJob 1`] = `<createJob />`;
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Job)
+    job={
+      Object {
+        "_id": 1,
+        "description": "test",
+        "location": "test",
+        "managerid": "test",
+        "name": "test",
+        "pay": "test",
+        "schedule": "test",
+        "status": "0",
+      }
+    }
+  >
+    <Job
+      application={Array []}
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      job={
+        Object {
+          "_id": 1,
+          "description": "test",
+          "location": "test",
+          "managerid": "test",
+          "name": "test",
+          "pay": "test",
+          "schedule": "test",
+          "status": "0",
+        }
+      }
+    >
+      <div
+        className="post"
+        key="1"
+        style={
+          Object {
+            "marginLeft": "50px",
+            "width": "50vw",
+          }
+        }
+      >
+        <div
+          className="post-header"
+        >
+          <div>
+            <h4
+              style={
+                Object {
+                  "display": "inline-block",
+                  "marginTop": "-12px",
+                }
+              }
+            >
+              Item : 
+            </h4>
+            <span
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            />
+          </div>
+          <div>
+            <h4
+              style={
+                Object {
+                  "display": "inline-block",
+                  "marginTop": "-12px",
+                }
+              }
+            >
+              Cost Per Item : 
+            </h4>
+            <span
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            />
+          </div>
+          <div>
+            <h4
+              style={
+                Object {
+                  "display": "inline-block",
+                  "marginTop": "-12px",
+                }
+              }
+            >
+              Expiration Date : 
+            </h4>
+            <span
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Invalid Date
+            </span>
+          </div>
+          <div>
+            <h4
+              style={
+                Object {
+                  "display": "inline-block",
+                  "marginTop": "-12px",
+                }
+              }
+            >
+              Date Bought : 
+            </h4>
+            <span
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            >
+              Invalid Date
+            </span>
+          </div>
+          <div>
+            <h4
+              style={
+                Object {
+                  "display": "inline-block",
+                  "marginTop": "-12px",
+                }
+              }
+            >
+              Quantity : 
+            </h4>
+            <span
+              style={
+                Object {
+                  "marginLeft": "10px",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </Job>
+  </Connect(Job)>
+</Provider>
+`;

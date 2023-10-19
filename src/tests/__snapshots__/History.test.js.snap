@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(History)
+    application={Array []}
+    user={
+      Object {
+        "_id": "test",
+      }
+    }
+  >
+    <History
+      analytics={Array []}
+      application={Array []}
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      job={Array []}
+      user={
+        Object {
+          "_id": "test",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "margin": "auto",
+            "width": "90%",
+          }
+        }
+      >
+        <div
+          className="login-signup-header"
+          style={
+            Object {
+              "margin": "20px 0px",
+              "textAlign": "center",
+            }
+          }
+        >
+          Restaurant Analytics 
+        </div>
+        <div>
+          <div
+            className="login-signup-header"
+            style={
+              Object {
+                "fontSize": "26px",
+                "margin": "20px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            Menu Sell (Last 7 Days)
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Menu Name
+            </label>
+            <select
+              onChange={[Function]}
+            >
+              <option
+                value=""
+              >
+                Select Menu Item to view it's Analysis
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginTop": "40px",
+            }
+          }
+        />
+        <hr />
+        <div
+          style={
+            Object {
+              "marginTop": "10px",
+            }
+          }
+        >
+          <div
+            className="login-signup-header"
+            style={
+              Object {
+                "fontSize": "26px",
+                "margin": "20px 0px",
+                "textAlign": "center",
+              }
+            }
+          >
+            Inventory Usage  (Last 7 Days)
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Inventory Item Name
+            </label>
+            <select
+              onChange={[Function]}
+            >
+              <option
+                value=""
+              >
+                Select Inventory Item to view it's Analysis
+              </option>
+            </select>
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginTop": "40px",
+            }
+          }
+        />
+      </div>
+    </History>
+  </Connect(History)>
+</Provider>
+`;

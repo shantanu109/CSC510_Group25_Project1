@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Settings)
+    state={
+      Object {
+        "address": "test",
+        "confirmPassword": "test",
+        "dob": "tests",
+        "gender": "tests",
+        "hours": "test",
+        "name": "testss",
+        "password": "test",
+        "phonenumber": "test",
+        "skills": "test",
+        "user_id": "test",
+        "userrole": "test",
+      }
+    }
+  >
+    <Settings
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      state={
+        Object {
+          "address": "test",
+          "confirmPassword": "test",
+          "dob": "tests",
+          "gender": "tests",
+          "hours": "test",
+          "name": "testss",
+          "password": "test",
+          "phonenumber": "test",
+          "skills": "test",
+          "user_id": "test",
+          "userrole": "test",
+        }
+      }
+    >
+      <div
+        className="settings"
+      >
+        <div
+          className="img-container"
+        >
+          <img
+            alt="user-dp"
+            src="https://ui-avatars.com/api/?name="
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <div
+            className="field-label"
+          >
+            Email
+          </div>
+          <div
+            className="field-value"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <div
+            className="field-label"
+          >
+            Restaurant Name
+          </div>
+          <div
+            className="field-value"
+          />
+        </div>
+        <div
+          className="field"
+        >
+          <div
+            className="field-label"
+          >
+            Name
+          </div>
+          <div
+            className="field-value"
+          />
+        </div>
+        <div
+          className="btn-grp"
+        >
+          <button
+            className="button edit-btn"
+            onClick={[Function]}
+          >
+            Edit Profile
+          </button>
+        </div>
+      </div>
+    </Settings>
+  </Connect(Settings)>
+</Provider>
+`;
