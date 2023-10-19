@@ -83,7 +83,7 @@ class Menu extends Component {
     })
 
     this.props.dispatch(createMenu(user.restname,user._id,menuname,quantity,costmenu))
-
+    alert(menuname + " added!");
     
 
     
@@ -124,6 +124,7 @@ class Menu extends Component {
 
         <div className="field">
           <input
+            id="quan"
             placeholder="Quantity"
             type="text"
             required
@@ -133,6 +134,7 @@ class Menu extends Component {
 
         <div className="field">
           <input
+            id="cost"
             placeholder="Price"
             type="text"
             required
