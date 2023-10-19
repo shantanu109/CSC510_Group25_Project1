@@ -185,6 +185,7 @@ class Goal extends Component {
             <div className="field">
               
           <input
+            id="itnameupdate"
             placeholder="Item Name"
             type="text"
             required
@@ -194,6 +195,7 @@ class Goal extends Component {
 
         <div className="field">
           <input
+            id="quanupdate"
             placeholder="Quantity"
             type="text"
             required
