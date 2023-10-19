@@ -46,8 +46,6 @@ class App extends React.Component {
   componentDidMount() {
     
 
-    //const {user} = this.props.auth
-    //this.props.dispatch(fetchFriends(user._id));
     this.props.dispatch(fetchJobs());
     
     this.props.dispatch(fetchMenus());
@@ -67,7 +65,6 @@ class App extends React.Component {
           name: user.name,
         })
       );
-      //const users = this.props.auth.user
       
     }
   }
