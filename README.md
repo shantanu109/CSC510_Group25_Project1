@@ -94,7 +94,7 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
  - Link to frontend repository: https://github.com/drs1951/CSC510_Group31
  - Link to backend repository: https://github.com/drs1951/86_Backend
 
-**\* To know the complete working of API used in the backend [click here](google.com)**
+**\* To know the complete working of API used in the backend [click here](https://github.com/drs1951/86_Backend/tree/main/docs/api)**
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -180,7 +180,7 @@ npm start
  ## Run Test cases
 
  ### [Frontend Test Cases Guide]()
- ### [Backend Test Cases Guide]()
+ ### [Backend Test Cases Guide](https://github.com/drs1951/86_Backend/blob/main/docs/backend_teting.md)
  
 
 
