@@ -88,36 +88,99 @@ https://user-images.githubusercontent.com/42051115/135004434-50d95b77-87a3-4c18-
 ### The user may also update password
 ![WhatsApp Image 2021-12-04 at 6 20 17 PM](https://user-images.githubusercontent.com/89566418/144727574-b4f5f7d0-fe57-4ea8-96f9-c3bb48f382b6.jpeg)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Source Code
+ - Link to frontend repository: https://github.com/drs1951/CSC510_Group31
+ - Link to backend repository: https://github.com/drs1951/86_Backend
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Installation Guide
+
+
+## Primary Requirements
+
+1. **Node.js**: Make sure you have Node.js installed. If not, [download it here](https://nodejs.org/).
+
+2. **IDE (VS Code)**: Download and install [Visual Studio Code](https://code.visualstudio.com/), as it is the preferred IDE for this project.
+
+## Frontend Installation Guide
+
+### Step 1: Clone [this](https://github.com/drs1951/CSC510_Group31) Repository
+
+```
+git clone [repository_url]
+
+```
+
+### Step 2: Install Required Packages
+
+```
+npm install --legacy-peer-deps
+
+```
+
+### Step 3: Handle Potential Errors
+
+For Mac Users:
+
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+
+```
+
+For Windows Users:
+
+```
+set NODE_OPTIONS=--openssl-legacy-provider
+
+```
+
+### Step 4: Build and Run the Project
+
+```
+npm start
+
+```
+
+### Step 5: Application view on browser [http://localhost:3000](http://localhost:3000)
+
+
+
+## Backend Installation Guide
+
+### Step 1: Clone [this](https://github.com/drs1951/86_Backend) Repository
+
+```
+git clone [repository_url]
+
+```
+
+
+### Step 2: Install Required Packages
+
+```
+npm install --legacy-peer-deps
+
+```
+
+
+### Step 3: Build and Run the Project
+
+```
+npm start
+
+```
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ ## Run Test cases
+
+ ### [Frontend Test Cases Guide]()
+ ### [Backend Test Cases Guide]()
  
- - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
- - Download and install [NodeJs](https://nodejs.org/en/download/)
- - Download the Allow CORS: Access-Control-Allow-Origin extension for Google Chrome
- 
- - In the command prompt clone the frontend project using following commands:
-#### `git clone https://github.com/shantanu109/CSC510_Group25_Project1.git`
-#### `git clone https://github.com/shantanu109/86_Backend.git`
 
-
-- Then enter
- to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
-
- - Then enter below command for both the terminals to start the application:
-#### `npm start`
-
-- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## To run test cases enter below commands
-npm install --save-dev @wojtekmaj/enzyme-adapter-react-17\
-npm run test
-
-## To test Code Coverage
-npm test -- --coverage 
- 
-## Source Code
- - Link to frontend repository: https://github.com/shantanu109/CSC510_Group25_Project1
- - Link to backend repository: https://github.com/shantanu109/86_Backend
 
 ## Funding:
 The project is not currently funded
@@ -125,6 +188,11 @@ The project is not currently funded
 ## 🌠 Future
 
 See RoadMap here: https://github.com/shantanu109/CSC510_Group25_Project1/projects/1
+
+## Troubleshooting
+
+If you encounter any issues during the installation process, feel free to reach out to our contact our support team at [86.no.more.help@gmail.com](mailto:86.no.more.help@gmail.com).
+
 
 # Contributors
   <table>
