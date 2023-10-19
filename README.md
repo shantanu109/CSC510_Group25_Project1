@@ -197,11 +197,10 @@ If you encounter any issues during the installation process, feel free to reach 
 # Contributors
   <table>
   <tr>
-    <td align="center"><a href="https://github.com/shantanu109"><img src="https://avatars.githubusercontent.com/u/42075794?v=4" width="100px;" alt=""/><br /><sub><b>Shantanu Pandey</b></sub></a></td>
-    <td align="center"><a href="https://github.com/gargvarun250"><img src="https://avatars.githubusercontent.com/u/89566418?v=4" width="100px;" alt=""/><br /><sub><b>Varun Garg</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Sahil-Nande"><img src="https://avatars.githubusercontent.com/u/89487138?v=4" width="100px;" alt=""/><br /><sub><b>Sahil Nande</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/urmi6899"><img src="https://avatars.githubusercontent.com/u/53376580?v=4" width="100px;" alt=""/><br /><sub><b>Urmi Pathak</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/leanneserrao"><img src="https://avatars.githubusercontent.com/u/25662536?v=4" width="100px;" alt=""/><br /><sub><b>Leanne Serrao</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/shantanu109"><img src="https://avatars.githubusercontent.com/u/54364517?v=4" width="100px;" alt=""/><br /><sub><b>Devansh Shah</b></sub></a></td>
+    <td align="center"><a href="https://github.com/gargvarun250"><img src="https://avatars.githubusercontent.com/u/57554284?v=4" width="100px;" alt=""/><br /><sub><b>Shyamal Gandhi</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Sahil-Nande"><img src="https://avatars.githubusercontent.com/u/59785863?v=4" width="100px;" alt=""/><br /><sub><b>Jay Patel</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/urmi6899"><img src="https://avatars.githubusercontent.com/u/85347670?v=4" width="100px;" alt=""/><br /><sub><b>Shail Shah</b></sub></a><br /></td>
   </tr>
 </table>
 
