@@ -135,7 +135,7 @@ class Goal extends Component {
         </div>
         <div className="field">
           <input
-            placeholder="Date Bought"
+            placeholder="Date Bought (mm/dd/yy)"
             type="text"
             required
             onChange={(e) => this.handleInputChange('datebought', e.target.value)}
@@ -144,7 +144,7 @@ class Goal extends Component {
 
         <div className="field">
           <input
-            placeholder="Expiration Date"
+            placeholder="Expiration Date (mm/dd/yy)"
             type="text"
             required
             onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
