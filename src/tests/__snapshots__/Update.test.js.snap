@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "store": Object {
+        "@@observable": [Function],
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "subscription": Object {
+        "addNestedSub": [Function],
+        "getListeners": [Function],
+        "handleChangeWrapper": [Function],
+        "isSubscribed": [Function],
+        "notifyNestedSubs": [Function],
+        "onStateChange": [Function],
+        "trySubscribe": [Function],
+        "tryUnsubscribe": [Function],
+      },
+    }
+  }
+>
+  <Connect(Update)
+    dummyVal={
+      Object {
+        "auth": Object {
+          "user": Object {
+            "_id": "tester123",
+            "email": "test@gmail.com",
+            "name": "Tester",
+          },
+        },
+        "job": Array [
+          Object {
+            "_id": 1,
+            "itemname": "Test Number 1",
+            "quantity": 5,
+          },
+          Object {
+            "_id": 2,
+            "itemname": "Test Number 2",
+            "quantity": 10,
+          },
+        ],
+      }
+    }
+  />
+</ContextProvider>
+`;
