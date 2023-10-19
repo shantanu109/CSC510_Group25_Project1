@@ -83,6 +83,13 @@ class Goal extends Component {
     this.setState({
       itemname:''
     })
+
+    alert(itemname + " added to the inventory!");
+    document.getElementById("itname").value = "";
+    document.getElementById("quan").value = "";
+    document.getElementById("cost").value = "";
+    document.getElementById("edate").value = "";
+    document.getElementById("bdate").value = ""; 
     
   }
 
