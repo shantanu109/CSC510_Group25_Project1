@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createOrder 1`] = `<createOrder />`;
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Order)
+    mockOrder={
+      Array [
+        Object {
+          "_id": 1,
+          "items": Array [
+            Object {
+              "cost": 20,
+              "id": 1,
+              "quantity": 2,
+            },
+          ],
+          "totalCost": 20,
+        },
+      ]
+    }
+  >
+    <Order
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      job={Array []}
+      menu={Array []}
+      mockOrder={
+        Array [
+          Object {
+            "_id": 1,
+            "items": Array [
+              Object {
+                "cost": 20,
+                "id": 1,
+                "quantity": 2,
+              },
+            ],
+            "totalCost": 20,
+          },
+        ]
+      }
+      order={Array []}
+      results={Array []}
+    >
+      <div>
+        <form
+          className="goal-form"
+          onSubmit={[Function]}
+          style={
+            Object {
+              "height": "fit-content",
+              "marginLeft": "30%",
+              "width": "650px",
+            }
+          }
+        >
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "margin": "20px 0px",
+              }
+            }
+          >
+            Add Order
+          </span>
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "fontSize": "22px",
+                "marginBottom": "20px",
+              }
+            }
+          >
+            Item Ordered
+          </span>
+          <div
+            className="ingredient_used_container"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="ingredient_used"
+            >
+              <div
+                className="field"
+                key="0"
+              >
+                <label>
+                  Ingredient Name
+                </label>
+                <select
+                  onChange={[Function]}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Item
+                  </option>
+                </select>
+              </div>
+              <div
+                className="field"
+                key="0"
+              >
+                <label>
+                  Quantity
+                </label>
+                <input
+                  min="1"
+                  onChange={[Function]}
+                  placeholder="Quantity"
+                  required={true}
+                  type="number"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Total Cost
+            </label>
+            <input
+              disabled={true}
+              placeholder="Quantity"
+              required={true}
+              type="text"
+              value="$ 0"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              onClick={[Function]}
+              style={
+                Object {
+                  "borderRadius": "8px",
+                  "fontSize": "16px",
+                  "width": "30%",
+                }
+              }
+              type="button"
+            >
+              Add More Item
+            </button>
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              type="submit"
+            >
+              Place Order
+            </button>
+          </div>
+        </form>
+        <div
+          style={
+            Object {
+              "marginLeft": "23.5%",
+              "width": "650px",
+            }
+          }
+        />
+      </div>
+    </Order>
+  </Connect(Order)>
+</Provider>
+`;

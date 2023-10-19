@@ -8,12 +8,11 @@ import Settings from './Settings';
 
 import Goal from './Goal';
 import History from './History';
-import UserApplication from './UserApplication';
 import Update from './Update';
 import Notification from './Notification';
 import Menu from './Menu';
 import Job1 from './Job1'
 
 
-export {Home, Page404,Navbar, Login,Signup,Settings,Goal,History,UserApplication,Update,Notification,Menu,Job1}
+export {Home, Page404,Navbar, Login,Signup,Settings,Goal,History,Update,Notification,Menu,Job1}
 

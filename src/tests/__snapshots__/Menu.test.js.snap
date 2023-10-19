@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Menu)
+    auth={
+      Object {
+        "error": null,
+        "user": Object {
+          "_id": "test123",
+          "email": "test@example.com",
+          "name": "Test User",
+        },
+      }
+    }
+    job={
+      Array [
+        Object {
+          "_id": 1,
+          "itemname": "Test Ingredient 1",
+        },
+        Object {
+          "_id": 2,
+          "itemname": "Test Ingredient 2",
+        },
+      ]
+    }
+    menu={
+      Array [
+        Object {
+          "_id": 1,
+          "costmenu": 10,
+          "ingredients": Array [
+            Object {
+              "inventory_id": 1,
+              "quantity": 2,
+            },
+          ],
+          "menuname": "Test Menu 1",
+        },
+      ]
+    }
+  >
+    <Menu
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      job={Array []}
+      menu={Array []}
+      results={Array []}
+    >
+      <div>
+        <form
+          className="goal-form"
+          onSubmit={[Function]}
+          style={
+            Object {
+              "height": "fit-content",
+              "marginLeft": "30%",
+              "width": "650px",
+            }
+          }
+        >
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "margin": "20px 0px",
+              }
+            }
+          >
+            Add Menu Item
+          </span>
+          <div
+            className="field"
+          >
+            <label>
+              Menu Item Name
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Item Name"
+              required={true}
+              type="text"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Price
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Price"
+              required={true}
+              type="text"
+            />
+          </div>
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "fontSize": "22px",
+                "marginBottom": "20px",
+              }
+            }
+          >
+            Ingredient Used
+          </span>
+          <div
+            className="ingredient_used_container"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="ingredient_used"
+            >
+              <div
+                className="field"
+                key="0"
+              >
+                <label>
+                  Ingredient Name
+                </label>
+                <select
+                  onChange={[Function]}
+                >
+                  <option
+                    value=""
+                  >
+                    Select Item
+                  </option>
+                </select>
+              </div>
+              <div
+                className="field"
+                key="0"
+              >
+                <label>
+                  Quantity
+                </label>
+                <input
+                  min="1"
+                  onChange={[Function]}
+                  placeholder="Quantity"
+                  required={true}
+                  type="number"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              onClick={[Function]}
+              style={
+                Object {
+                  "borderRadius": "8px",
+                  "fontSize": "16px",
+                  "width": "30%",
+                }
+              }
+              type="button"
+            >
+              Add More Ingredient
+            </button>
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              type="submit"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+        <div
+          style={
+            Object {
+              "marginLeft": "23.5%",
+              "width": "650px",
+            }
+          }
+        />
+      </div>
+    </Menu>
+  </Connect(Menu)>
+</Provider>
+`;

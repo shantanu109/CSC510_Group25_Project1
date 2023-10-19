@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Notification)
+    auth={
+      Object {
+        "error": null,
+        "user": Object {
+          "_id": "test123",
+          "email": "test@example.com",
+          "name": "Test User",
+        },
+      }
+    }
+    job={
+      Array [
+        Object {
+          "_id": 1,
+          "dateexpired": "2023-11-01",
+          "itemname": "Test Item 1",
+          "quantity": 5,
+        },
+        Object {
+          "_id": 2,
+          "dateexpired": "2023-11-05",
+          "itemname": "Test Item 2",
+          "quantity": 15,
+        },
+      ]
+    }
+  >
+    <Notification
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      job={Array []}
+      results={Array []}
+    >
+      <div>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Styled(MuiBox)
+            flexDirection="row-reverse"
+          >
+            <div
+              className="MuiBox-root MuiBox-root-1"
+            />
+          </Styled(MuiBox)>
+        </div>
+      </div>
+    </Notification>
+  </Connect(Notification)>
+</Provider>
+`;
