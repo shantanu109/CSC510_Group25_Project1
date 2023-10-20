@@ -44,3 +44,18 @@ These tests serve as a critical component in ensuring the robustness and reliabi
 
 ## Here are the test cases that we have implemented
 
+- [App Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/app_test.md)
+- [Goal Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/goal_test.md)
+- [History Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/history_test.md)
+- [Home Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/home_test.md)
+- [Job Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/job_test.md)
+- [Job2 Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/job2_test.md)
+- [Login Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/login_test.md)
+- [Menu Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/menu_test.md)
+- [Navbar Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/navbar_test.md)
+- [Notification Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/notification_test.md)
+- [Order Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/order_test.md)
+- [Setting Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/setting_test.md)
+- [Signup Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/signup_test.md)
+- [Update Test](https://github.com/drs1951/CSC510_Group31/blob/shail611-patch-1/docs/test/update_test.md)
+
