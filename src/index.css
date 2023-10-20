@@ -19,6 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -127,7 +128,7 @@ code {
   color: #616161;
   border-right: none;
   border-left: none;
-  border-bottom: ;
+  /* border-bottom: ; */
   cursor: pointer;
   /* justify-content: space-evenly; */
   margin-bottom: 10px;
@@ -436,21 +437,38 @@ nav .nav-links ul li:hover {
   border-radius: 6px;
 
 }
+
+.ingredient_used{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  gap: 1rem;
+}
+
+.ingredient_tab{
+  display: flex;
+  gap: 1rem;
+  text-align: c;
+}
+
 .field {
   width: 100%;
+  margin-bottom: 4px;
 }
 .field2 {
   width: 100%;
 }
-.field input {
+.field input, .field select {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   border-radius: 6px;
   width: 100%;
   height: 40px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px;
   font-size: 15px;
+  outline: none;
 }
 .field2 input {
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -831,7 +849,6 @@ nav .nav-links ul li:hover {
   display: flex;
   align-items: flex-end;
   padding:10px;
-  
 
 }
 
@@ -1131,6 +1148,18 @@ box-sizing: border-box;
   border-bottom: none;
   border-left: none;
   animation: scaleEight 2s infinite alternate linear
+}
+
+.constant-tilt-shake {
+  animation: tilt-shaking 0.3s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 @keyframes scaleEight {

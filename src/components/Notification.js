@@ -110,44 +110,44 @@ class Notification extends Component {
       const {error} = this.props.auth;
       const {user} = this.props.auth;
       const {job} = this.props;
-        
+       
+      
       let utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
       var parts = utc.split('/')
+      let utc2 = new Date();
       
         return (
             <div>
                 
              <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-  }}>
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexDirection: 'column',
+            }}>
     {
       (1>0) ?
         <Box flexDirection="row-reverse">
           {
             job.map(job => {
-                
-            var parts2 = job.dateexpired.split('/')
-            console.log('parrrtptptps',parts2)
-            console.log('parrrt1',parts)
-            if (Number(parts2[0]) - Number(parts[2]) < 1 && Number(parts2[1]) - Number(parts[1] < -2) && Number(parts[0]) > Number(parts2[2])){
+              
+              // console.log(new Date(job.dateexpired))
+              if (new Date(new Date(job.dateexpired).setDate(new Date(job.dateexpired).getDate()-2)).getTime() <= utc2.getTime()){
 
-              return <Card  key={job._id}>
-                <CardContent>
+              return <Card  key={job._id} style={{margin:"20px 0px"}}>
+                <CardContent >
                 
                   <Typography color="secondary" gutterBottom>
-                    Expiration Alert!
+                    {utc2.getTime() < new Date(job.dateexpired).getTime()?"Incoming ":""} Expiration Alert!
                   </Typography>
                   <Typography  color="textSecondary" gutterBottom>
-                    {job.dateexpired}
+                    {new Date(job.dateexpired).toDateString()}
                   </Typography>
                   <Typography variant="h5" component="h2">
-                    {job.itemname} has expired on {job.dateexpired}
+                    {job.itemname} {utc2.getTime() >= new Date(job.dateexpired).getTime()?"has":"will"} expired on {new Date(job.dateexpired).toDateString()}
                   </Typography>
                   <Typography  color="textSecondary">
-                    {job.quantity} unit{job.quantity > 1 ? "s have" : " has"} gone bad. Please order more.
+                    {job.quantity} unit{job.quantity > 1 ? "s have" : " has"} {utc2.getTime() >= new Date(job.dateexpired).getTime()?"has gone":"will go"}  bad. Please order more.
                   </Typography>
                 </CardContent>
               </Card> }
@@ -157,12 +157,12 @@ class Notification extends Component {
           {
             
             job.map(job => {
-            if (job.dateexpired < utc){
+            if (new Date(new Date(job.dateexpired).setDate(new Date(job.dateexpired).getDate()-2)).getTime() > utc2.getTime()){
                 if (job.quantity<10){
               return <Card  key={job._id}>
                 <CardContent>
                   <Typography  color="primary" gutterBottom>
-                    Low Inventory Alert!
+                    Low Inventory Alert for {job.itemname} !
                   </Typography>
                   <Typography  color="textSecondary" gutterBottom>
                     Only {job.quantity} unit{job.quantity > 1 ? "s are" : " is"} left in stock.

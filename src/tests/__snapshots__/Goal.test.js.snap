@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<Provider
+  store={
+    Object {
+      "@@observable": [Function],
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Goal)
+    error={Object {}}
+  >
+    <Goal
+      auth={
+        Object {
+          "error": null,
+          "inProgress": false,
+          "isLoggedIn": false,
+          "user": Object {},
+        }
+      }
+      dispatch={[Function]}
+      error={Object {}}
+      job={Array []}
+      results={Array []}
+    >
+      <div>
+        <form
+          className="goal-form"
+          onSubmit={[Function]}
+          style={
+            Object {
+              "height": "600px",
+              "marginLeft": "31.5%",
+              "width": "600px",
+            }
+          }
+        >
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "margin": "20px 0px",
+              }
+            }
+          >
+            Add Inventory
+          </span>
+          <div
+            className="field"
+          >
+            <label>
+              Item Name
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Item Name"
+              required={true}
+              type="text"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Quantity
+            </label>
+            <input
+              min="1"
+              onChange={[Function]}
+              placeholder="Quantity"
+              required={true}
+              type="number"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Cost
+            </label>
+            <input
+              min="1"
+              onChange={[Function]}
+              placeholder="Cost per item"
+              required={true}
+              type="number"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Bought
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Date Bought"
+              required={true}
+              type="date"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Expiration
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Expiration Date"
+              required={true}
+              type="date"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              type="submit"
+            >
+              Add Item
+            </button>
+          </div>
+        </form>
+        <form
+          className="goal-form"
+          onSubmit={[Function]}
+          style={
+            Object {
+              "height": "fit-content",
+              "marginLeft": "31.5%",
+              "width": "600px",
+            }
+          }
+        >
+          <span
+            className="login-signup-header"
+            style={
+              Object {
+                "margin": "20px 0px",
+              }
+            }
+          >
+            Update Item
+          </span>
+          <div
+            className="field"
+          >
+            <label>
+              Select Inventory Item
+            </label>
+            <select
+              onChange={[Function]}
+            >
+              <option
+                value=""
+              >
+                Select Item
+              </option>
+            </select>
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Added Quantity
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Quantity"
+              required={true}
+              style={
+                Object {
+                  "marginBottom": "0px",
+                }
+              }
+              type="number"
+            />
+            <div
+              style={
+                Object {
+                  "color": "#a1a197",
+                  "fontSize": "14px",
+                  "marginBottom": "20px",
+                }
+              }
+            >
+              If you want to Decrement Quantity add it with '-'. for eg:-2
+            </div>
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Cost
+            </label>
+            <input
+              min="1"
+              onChange={[Function]}
+              placeholder="Cost per item"
+              required={true}
+              type="number"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Bought
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Date Bought"
+              required={true}
+              type="date"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <label>
+              Item Expiration
+            </label>
+            <input
+              onChange={[Function]}
+              placeholder="Expiration Date"
+              required={true}
+              type="date"
+            />
+          </div>
+          <div
+            className="field"
+          >
+            <button
+              className="button save-btn"
+              type="submit"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </Goal>
+  </Connect(Goal)>
+</Provider>
+`;

@@ -13,10 +13,11 @@ export const APIURLS = {
     
     createJob: () => `${API_ROOT}/users/createjob`,
     createMenu: () => `${API_ROOT}/users/createmenu`,
+    order: () => `${API_ROOT}/users/order`,
+    fetchOrder: () => `${API_ROOT}/users/orders`,
     
     fetchMenus: () => `${API_ROOT}/users/fetchmenus`,
 
-   
-    
+    fetchAnalytics: () => `${API_ROOT}/users/analytics`, 
 }
 

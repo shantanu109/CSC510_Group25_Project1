@@ -10,6 +10,8 @@ export const SIGNUP_START = 'SIGNUP_START';
 export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS';
 export const SIGNUP_FAILED = 'SIGNUP_FAILED';
 
+export const JOB_FAILED = 'JOB_FAILED';
+
 //This is the action which will dispatch when we will find the user using local storage jwt token
 
 export const AUTHENTICATE_USER = "AUTHENTICATE_USER";
@@ -24,6 +26,13 @@ export const CLOSE_JOB = "CLOSE_JOB";
 export const ADD_MENU = "ADD_MENU";
 export const UPDATE_MENU = "UPDATE_MENU";
 export const CLOSE_MENU = "CLOSE_MENU";
+
+export const UPDATE_ANALYTICS = "UPDATE_ANALYTICS";
+export const CLOSE_ANALYTICS = "CLOSE_ANALYTICS";
+
+export const ADD_ORDER = "ADD_ORDER";
+export const UPDATE_ORDER = "UPDATE_ORDER";
+export const CLOSE_ORDER = "CLOSE_ORDER";
 
 export const ADD_APPLICATION = "ADD_APPLICATION";
 export const UPDATE_APPLICATION = "UPDATE_APPLICATION";
